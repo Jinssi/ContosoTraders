@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using Microsoft.Azure.Cosmos;
 
-namespace GravyTraders.Api.Core.Repositories.Implementations;
+namespace gravyTraders.Api.Core.Repositories.Implementations;
 
 public abstract class CosmosGenericRepositoryBase<TEntity> : ICosmosGenericRepository<TEntity> where TEntity : class
 {

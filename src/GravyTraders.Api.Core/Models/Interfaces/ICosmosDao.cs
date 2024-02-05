@@ -1,4 +1,4 @@
-﻿namespace GravyTraders.Api.Core.Models.Interfaces;
+﻿namespace gravyTraders.Api.Core.Models.Interfaces;
 
 public interface ICosmosDao<T>
 {

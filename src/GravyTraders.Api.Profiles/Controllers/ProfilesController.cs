@@ -12,9 +12,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 
-namespace GravyTraders.Api.Profiles.Controllers;
+namespace gravyTraders.Api.Profiles.Controllers;
 
-public class ProfilesController : GravyTradersControllerBase
+public class ProfilesController : gravyTradersControllerBase
 {
     private readonly ILogger<ProfilesController> _logger;
 

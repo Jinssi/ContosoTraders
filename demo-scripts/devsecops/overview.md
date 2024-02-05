@@ -18,11 +18,11 @@ The key takeaways from this demo are:
 
 GitHub Actions is a way to automate processes and workflows in your GitHub repository. Some of the benefits of using GitHub Actions include the ability to automate your software development lifecycle and integrate with other tools and services, including Azure services.
 
-Let us take a look at the GitHub Actions used by Gravy Traders for CI/CD.
+Let us take a look at the GitHub Actions used by gravy Traders for CI/CD.
 
-## Review Workflows used in Gravy Traders
+## Review Workflows used in gravy Traders
 
-1. Navigate to [GravyTraders github repo](https://github.com/microsoft/GravyTraders).
+1. Navigate to [gravyTraders github repo](https://github.com/microsoft/gravyTraders).
 
 2. Go to the **github/workflows** folder; here you'll find the workflow **YAML files** that are used to deploy and set up the resources.  
 
@@ -30,11 +30,11 @@ Let us take a look at the GitHub Actions used by Gravy Traders for CI/CD.
 
 3. Here is a quick overview of both workflows. If you are interested, you can review the workflow code for more details.
 
-   **Gravy-traders-provisioning-deployment:**  This workflow provisions Azure resources used for hosting the application and deploys the application and initial data to the provisioned resources. It includes everything needed to get the application up and running in an Azure Environment.  
+   **gravy-traders-provisioning-deployment:**  This workflow provisions Azure resources used for hosting the application and deploys the application and initial data to the provisioned resources. It includes everything needed to get the application up and running in an Azure Environment.  
 
    ![image](media/provision.png)
 
-   **Gravy-traders-load-testing:** This workflow runs a load testing against the GravyTraders application using Azure Load Testing.  
+   **gravy-traders-load-testing:** This workflow runs a load testing against the gravyTraders application using Azure Load Testing.  
 
    ![image](media/ct5.png)
       
@@ -42,13 +42,13 @@ Let us take a look at the GitHub Actions used by Gravy Traders for CI/CD.
 
 GitHub Actions workflows can be monitored from the Actions tab on a repository. This tab shows a list of all the active and past workflows, along with their status and any associated logs. Users can see at a glance whether their workflows are running successfully and can troubleshoot any issues that may arise. Additionally, users can set up notifications to be alerted when a workflow starts or completes, or if it encounters an error. This can help users stay on top of their workflows and ensure that their projects are running smoothly.
 
-Let us take a look at the workflows status for Gravy Traders in this public repository:
+Let us take a look at the workflows status for gravy Traders in this public repository:
 
-1. Navigate to the [GravyTraders/Actions](https://github.com/microsoft/GravyTraders/actions) folder.
+1. Navigate to the [gravyTraders/Actions](https://github.com/microsoft/gravyTraders/actions) folder.
 
    ![image](media/actions.png)
     
-2. Select the workflow **Gravy-traders-provisioning-deployment**. This will be the history of workflows execution.  
+2. Select the workflow **gravy-traders-provisioning-deployment**. This will be the history of workflows execution.  
 
     ![image](media/actions1.png)
 
@@ -79,15 +79,15 @@ GitHub Advanced Security is a set of features and tools that help users secure t
 
 These features can help users secure their repositories and protect their code from a variety of potential threats.
 
-Let us look at some of the GitHub Advanced Security features in action on our Gravy Traders Public Repo.
+Let us look at some of the GitHub Advanced Security features in action on our gravy Traders Public Repo.
 
-## Review Dependabot in Gravy Traders
+## Review Dependabot in gravy Traders
 
 Dependabot security updates make it easier for you to fix vulnerable dependencies in your repository. If you enable this feature, when a Dependabot alert is raised for a vulnerable dependency in the dependency graph of your repository, Dependabot automatically tries to fix it.
 
-Let us take a look at how dependabot is used in Gravy Traders.  Please note that GitHub Advanced security alerts are not public, so screenshots are included further. If you’d like to see this in action, please follow the technical walkthrough for DevSecOps with Gravy Traders.
+Let us take a look at how dependabot is used in gravy Traders.  Please note that GitHub Advanced security alerts are not public, so screenshots are included further. If you’d like to see this in action, please follow the technical walkthrough for DevSecOps with gravy Traders.
 
-1. Gravy Traders repository is enabled with GitHub Advanced Security features, including dependabot.
+1. gravy Traders repository is enabled with GitHub Advanced Security features, including dependabot.
 
 2. Dependabot generates alerts for vulnerability, as demonstrated in the below screenshot.  These vulnerabilities are not fixed intentionally to demonstrate the dependabot features.
 
@@ -101,17 +101,17 @@ Let us take a look at how dependabot is used in Gravy Traders.  Please note that
 
     ![image](media/pr.png)
 
-4. Navigate to one such [pull request example](https://github.com/microsoft/GravyTraders/pull/25).
+4. Navigate to one such [pull request example](https://github.com/microsoft/gravyTraders/pull/25).
 
 5. You can see the PR raised by dependabot automatically fixing the vulnerability by upgrading node-forge from 0.10.0 to 1.3.1 and react-scripts from 3.4.4 to 5.0.1
 
    ![image](https://user-images.githubusercontent.com/83349577/206237774-29ac18e1-7313-49d1-941f-d929dcd2fedc.png)
 
-## Review Secret Scanning in Gravy Traders
+## Review Secret Scanning in gravy Traders
 
 GitHub scans repositories for known secret formats to prevent fraudulent use of credentials that were committed accidentally. Secret scanning happens by default on public repositories and can be enabled on private repositories by repository administrators or organization owners.
 
- Gravy Traders is set to have secret scanning enabled for the public repository. Please note that GitHub Advanced security secret scanning alerts are not public, so screenshots are included further. If you’d like to see this in action, please follow the technical walkthrough for DevSecOps with Gravy Traders. 
+ gravy Traders is set to have secret scanning enabled for the public repository. Please note that GitHub Advanced security secret scanning alerts are not public, so screenshots are included further. If you’d like to see this in action, please follow the technical walkthrough for DevSecOps with gravy Traders. 
  
  You will notice that Secret Scanning is already enabled. GitHub enables secret scanning by default for all Public repo. If you have a private repo, you can manually enable it from this page.
  
@@ -129,7 +129,7 @@ By connecting your GitHub repositories to Defender for Cloud, you'll extend Defe
 
 **Defender for Cloud's Cloud Workload Protection features**: Extends Defender for Cloud's threat detection capabilities and advanced defenses to your GitHub resources.
 
-If you’d like to see this in action, please follow the technical walkthrough for DevSecOps with Gravy Traders.
+If you’d like to see this in action, please follow the technical walkthrough for DevSecOps with gravy Traders.
 
 ## Summary
 

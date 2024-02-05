@@ -2,11 +2,11 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Grid } from '@material-ui/core'
 import Product from '../product/product';
-import productImg1 from '../../../../assets/images/original/Gravy_Assets/Caurosal/product_1.jpg'
-import productImg2 from '../../../../assets/images/original/Gravy_Assets/Caurosal/product_2.jpg'
-import productImg3 from '../../../../assets/images/original/Gravy_Assets/Caurosal/product_3.jpg'
-import productImg4 from '../../../../assets/images/original/Gravy_Assets/Caurosal/product_4.jpg'
-import productImg5 from '../../../../assets/images/original/Gravy_Assets/Caurosal/product_5.jpg'
+import productImg1 from '../../../../assets/images/original/gravy_Assets/Caurosal/product_1.jpg'
+import productImg2 from '../../../../assets/images/original/gravy_Assets/Caurosal/product_2.jpg'
+import productImg3 from '../../../../assets/images/original/gravy_Assets/Caurosal/product_3.jpg'
+import productImg4 from '../../../../assets/images/original/gravy_Assets/Caurosal/product_4.jpg'
+import productImg5 from '../../../../assets/images/original/gravy_Assets/Caurosal/product_5.jpg'
 
 export default function Slider(props) {
     var items = [

@@ -1,6 +1,6 @@
 ﻿using MediatR.Pipeline;
 
-namespace GravyTraders.Api.Core.Requests.Handlers;
+namespace gravyTraders.Api.Core.Requests.Handlers;
 
 internal class GetStockRequestHandler : IRequestPreProcessor<GetStockRequest>, IRequestHandler<GetStockRequest, IActionResult>
 {

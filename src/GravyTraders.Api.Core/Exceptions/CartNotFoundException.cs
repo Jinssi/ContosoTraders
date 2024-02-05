@@ -1,6 +1,6 @@
-﻿namespace GravyTraders.Api.Core.Exceptions;
+﻿namespace gravyTraders.Api.Core.Exceptions;
 
-public class CartNotFoundException : GravyTradersBaseException
+public class CartNotFoundException : gravyTradersBaseException
 {
     public CartNotFoundException(string email)
         : base($"Shopping Cart for '{email}' could not be found.")

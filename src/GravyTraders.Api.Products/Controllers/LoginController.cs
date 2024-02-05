@@ -1,14 +1,14 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using GravyTraders.Api.Core.Constants;
+using gravyTraders.Api.Core.Constants;
 using Microsoft.IdentityModel.Tokens;
 
-namespace GravyTraders.Api.Products.Controllers;
+namespace gravyTraders.Api.Products.Controllers;
 
 [Route("v1/[controller]")]
 [Produces("application/json")]
-public class LoginController : GravyTradersControllerBase
+public class LoginController : gravyTradersControllerBase
 {
     private readonly IConfiguration config;
 
@@ -46,7 +46,7 @@ public class LoginController : GravyTradersControllerBase
 
         var token = new JwtSecurityToken(
             claims: claims,
-            issuer: config["Issuer"] ?? "GravyWebsite",
+            issuer: config["Issuer"] ?? "gravyWebsite",
             expires: DateTime.Now.AddDays(expiresInDays),
             signingCredentials: creds);
 

@@ -1,4 +1,4 @@
-testName: Gravy-traders-carts
-testPlan: Gravy-traders-carts.jmx
+testName: gravy-traders-carts
+testPlan: gravy-traders-carts.jmx
 description: 
 engineInstances: 1

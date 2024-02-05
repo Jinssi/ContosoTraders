@@ -1,6 +1,6 @@
-﻿using Type = GravyTraders.Api.Core.Models.Implementations.Dao.Type;
+﻿using Type = gravyTraders.Api.Core.Models.Implementations.Dao.Type;
 
-namespace GravyTraders.Api.Core.Services.Interfaces;
+namespace gravyTraders.Api.Core.Services.Interfaces;
 
 public interface IProductService
 {

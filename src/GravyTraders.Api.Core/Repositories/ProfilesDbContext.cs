@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Profile = GravyTraders.Api.Core.Models.Implementations.Dao.Profile;
+using Profile = gravyTraders.Api.Core.Models.Implementations.Dao.Profile;
 
-namespace GravyTraders.Api.Core.Repositories;
+namespace gravyTraders.Api.Core.Repositories;
 
 public class ProfilesDbContext : DbContext
 {

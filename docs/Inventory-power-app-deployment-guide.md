@@ -1,19 +1,19 @@
 <h1>Deployment Guide -  Inventory Management System with Microsoft Power Platform</h1>
 
-This deployment guide is designed to help you deploy the Inventory Management System for Gravy Traders, built using Microsoft Power Platform. Inventory Management Systems is an internal application designed to manage product catalogue, stock, price etc for products listed on Gravy Traders. 
+This deployment guide is designed to help you deploy the Inventory Management System for gravy Traders, built using Microsoft Power Platform. Inventory Management Systems is an internal application designed to manage product catalogue, stock, price etc for products listed on gravy Traders. 
 
  Microsoft Power Platform features, including Power Apps & Power Autoamte is used for developing and hosting this application, using Power Platforn's low-code/no-code approach towards application development. 
 
  Microsoft Power Apps is a low-code platform that allows users to easily create custom business applications for various scenarios. Power Automate is a tool that enables users to automate business processes and workflows. Together, these tools can be used to streamline and improve various business operations, such as data entry, data management, and communication between different business systems. 
  
- In Gravy Traders, we are usinge Power Apps to create a custom app for tracking and updating products inventory and Power Automate to automatically send notifications, approval workflow for change and update the products catalogue database once changes are approved. Power Automate integrates with Microsoft Teams for notifications and approval process. 
+ In gravy Traders, we are usinge Power Apps to create a custom app for tracking and updating products inventory and Power Automate to automatically send notifications, approval workflow for change and update the products catalogue database once changes are approved. Power Automate integrates with Microsoft Teams for notifications and approval process. 
 
 You will be using a pre-created Package to import the Power App & Power Automate configuration in your environment. 
 
 <h2>Pre-Requisite</h2>
 You will need the following before we start the deploymment
 
-1. You need to have GravyTraders App deployed in your Azure Subscription. If you have not deployed it yet, please refer the [documentation](../docs/App-Deployment-Guide.md).
+1. You need to have gravyTraders App deployed in your Azure Subscription. If you have not deployed it yet, please refer the [documentation](../docs/App-Deployment-Guide.md).
 
 2. An account with global administrator rights on the M365 tenant. 
 
@@ -41,7 +41,7 @@ Microsoft SharePoint is a web-based collaboration and document management platfo
 
 In Power Apps, SharePoint lists can be easily integrated and used as a data source for creating custom business applications. This allows users to access and manage their SharePoint data within the context of a custom app, making it easier to work with and analyze that data. 
 
-Gravy Traders leverages SharePoint list to store the data used by Inventory Management Power App, such as product price.
+gravy Traders leverages SharePoint list to store the data used by Inventory Management Power App, such as product price.
 
 Let's create a SharePoint list. 
 
@@ -112,11 +112,11 @@ Let's create a SharePoint list.
    
    ![simg4](images/share5.png)
    
-   7. Please provide the SQL Server Name. (You can get the server name from the azure portal where you have deployed the Gravy Trader. It'd start with "productsdb...."
+   7. Please provide the SQL Server Name. (You can get the server name from the azure portal where you have deployed the gravy Trader. It'd start with "productsdb...."
       
    6. Add database name productsdb
    7. Add Username localadmin
-   8. Add SQL Password.  (You created a new SQL_PASSWORD in GitHub secrets while deploying the Gravy Traders Application)
+   8. Add SQL Password.  (You created a new SQL_PASSWORD in GitHub secrets while deploying the gravy Traders Application)
    
     ![img](images/sql1.png)
 
@@ -128,7 +128,7 @@ Your Azure SQL Connection is now available in Dataverse.
 
 <h2>Deployment of Inventory Management System App</h2>
 
-   Now, we will need to import the Power App package to setup the Power Apps & Power Automate. Please download the zip file named InventoryManagementApp.zip [here](../src/GravyTraders.Api.Inventory/InventoryManagementApp.zip)
+   Now, we will need to import the Power App package to setup the Power Apps & Power Automate. Please download the zip file named InventoryManagementApp.zip [here](../src/gravyTraders.Api.Inventory/InventoryManagementApp.zip)
    
 
 1. Login to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/) with your Global Administrator account. 

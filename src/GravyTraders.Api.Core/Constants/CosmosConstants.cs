@@ -1,4 +1,4 @@
-﻿namespace GravyTraders.Api.Core.Constants;
+﻿namespace gravyTraders.Api.Core.Constants;
 
 public class CosmosConstants
 {

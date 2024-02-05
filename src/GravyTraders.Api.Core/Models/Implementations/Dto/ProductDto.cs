@@ -1,6 +1,6 @@
-﻿using Type = GravyTraders.Api.Core.Models.Implementations.Dao.Type;
+﻿using Type = gravyTraders.Api.Core.Models.Implementations.Dao.Type;
 
-namespace GravyTraders.Api.Core.Models.Implementations.Dto;
+namespace gravyTraders.Api.Core.Models.Implementations.Dto;
 
 public class ProductDto
 {

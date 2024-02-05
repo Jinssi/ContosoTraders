@@ -1,4 +1,4 @@
-# How to contribute to GravyTraders
+# How to contribute to gravyTraders
 
 This repo is a reference and learning resource and everyone is invited to contribute, however not all PRs will be accepted into the main branch (**`main`**).
 
@@ -51,7 +51,7 @@ The main branches is **`main`**:
 
 ## DISCLAIMER - This is not a PRODUCTION-READY TEMPLATE for microservices
 
-GravyTraders is a reference application to **showcase architectural patterns** for developing microservices applications using various Azure Services. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world application. In fact, the application is in a **permanent beta state**, as it’s also used to test new potentially interesting technologies as they show up.
+gravyTraders is a reference application to **showcase architectural patterns** for developing microservices applications using various Azure Services. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world application. In fact, the application is in a **permanent beta state**, as it’s also used to test new potentially interesting technologies as they show up.
 
 Since this is a learning resource, some design decisions have favored simplicity to convey a pattern, over production-grade robustness.
 

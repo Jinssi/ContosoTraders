@@ -29,7 +29,7 @@ class ChatBubble extends Component {
         ConfigService._logicAppUrl,
         {
           email: ConfigService._email,
-          headline: "Gravy Traders Customer Support",
+          headline: "gravy Traders Customer Support",
           summary: "Customer support",
           text: "Customer support",
           userPhone: "",
@@ -145,7 +145,7 @@ class ChatBubble extends Component {
                 >
                   <p className="bubble-text">
                     Hi! You can start a phone call, video call, or chat session
-                    to connect with a Gravy Traders associate. Which would
+                    to connect with a gravy Traders associate. Which would
                     you prefer?
                   </p>
                   <div className="bubble-options-row">

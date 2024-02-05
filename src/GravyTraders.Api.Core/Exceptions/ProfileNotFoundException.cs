@@ -1,6 +1,6 @@
-namespace GravyTraders.Api.Core.Exceptions;
+namespace gravyTraders.Api.Core.Exceptions;
 
-public class ProfileNotFoundException : GravyTradersBaseException
+public class ProfileNotFoundException : gravyTradersBaseException
 {
     public ProfileNotFoundException(string email)
         : base($"Profile for email '{email}' could not be found.")

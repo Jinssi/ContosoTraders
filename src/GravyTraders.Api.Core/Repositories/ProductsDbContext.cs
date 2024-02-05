@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Type = GravyTraders.Api.Core.Models.Implementations.Dao.Type;
+using Type = gravyTraders.Api.Core.Models.Implementations.Dao.Type;
 
-namespace GravyTraders.Api.Core.Repositories;
+namespace gravyTraders.Api.Core.Repositories;
 
 public class ProductsDbContext : DbContext
 {

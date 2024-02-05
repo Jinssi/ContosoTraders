@@ -1,6 +1,6 @@
 # Inventory Management System with Power Platform - Technical Walkthrough
 
-Power platform helps to build the Inventory Management System App for resolving the issues in the current scenario of Gravy Traders. It enables the collaborations internally. Two main components of Power Platform were used to build the application viz, PowerApp and Power Automate. Let's walkthrough each component and how it's configured. 
+Power platform helps to build the Inventory Management System App for resolving the issues in the current scenario of gravy Traders. It enables the collaborations internally. Two main components of Power Platform were used to build the application viz, PowerApp and Power Automate. Let's walkthrough each component and how it's configured. 
 
 ## Key Takeaways
 
@@ -23,7 +23,7 @@ This section has already been covered in our previous overview document. You can
 
 ## Technical Walkthrough - Power App 
 
-Inventory Management System App was built in Canvas App by using cloud database connectivity. Databases are kept in Azure SQL Database. We can use the app for CRUD operations. In Gravy Traders they need the Update operation through an automation process, before updating the price of any product the stakeholders should approve and once it gets approved the price will be updated automatically. Based on this scenario the App has to be built. Let's go through some of the screens in detail and explore how it's configured and what scripts and formulae are applied.    
+Inventory Management System App was built in Canvas App by using cloud database connectivity. Databases are kept in Azure SQL Database. We can use the app for CRUD operations. In gravy Traders they need the Update operation through an automation process, before updating the price of any product the stakeholders should approve and once it gets approved the price will be updated automatically. Based on this scenario the App has to be built. Let's go through some of the screens in detail and explore how it's configured and what scripts and formulae are applied.    
   
       
 1. Login into the Power platform Admin Center (https://admin.powerplatform.microsoft.com) with your Microsoft 365 Global Administrator account. 
@@ -63,7 +63,7 @@ Inventory Management System App was built in Canvas App by using cloud database 
    ![img](images/NApp5.png)
     
        
- 11. After clicking on the “Send for the Approval” button, it will trigger a notification message of Approval request into Microsoft Teams channel named "Pricing Updates" on the Teams named “Gravy Traders Inventory”. It has been configured by using Adaptive cards.
+ 11. After clicking on the “Send for the Approval” button, it will trigger a notification message of Approval request into Microsoft Teams channel named "Pricing Updates" on the Teams named “gravy Traders Inventory”. It has been configured by using Adaptive cards.
 
    ![TApp5](images/FApp1.png)       
   
@@ -72,7 +72,7 @@ Inventory Management System App was built in Canvas App by using cloud database 
        
    ![TApp6](images/FApp2.png)
        
- Also it will automatically update the price in SQL Database, resulting in updated price on Gravy Traders Website.
+ Also it will automatically update the price in SQL Database, resulting in updated price on gravy Traders Website.
 
 ## Walkthrough - Power Automate
 

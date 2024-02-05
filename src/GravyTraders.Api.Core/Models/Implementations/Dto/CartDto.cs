@@ -1,4 +1,4 @@
-﻿namespace GravyTraders.Api.Core.Models.Implementations.Dto;
+﻿namespace gravyTraders.Api.Core.Models.Implementations.Dto;
 
 public class CartDto
 {

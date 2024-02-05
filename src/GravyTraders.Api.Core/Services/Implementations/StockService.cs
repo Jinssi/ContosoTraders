@@ -1,6 +1,6 @@
-﻿namespace GravyTraders.Api.Core.Services.Implementations;
+﻿namespace gravyTraders.Api.Core.Services.Implementations;
 
-internal class StockService : GravyTradersServiceBase, IStockService
+internal class StockService : gravyTradersServiceBase, IStockService
 {
     private readonly IStockRepository _stockRepository;
 

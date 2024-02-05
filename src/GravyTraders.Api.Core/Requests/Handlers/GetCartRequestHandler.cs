@@ -1,6 +1,6 @@
 ﻿using MediatR.Pipeline;
 
-namespace GravyTraders.Api.Core.Requests.Handlers;
+namespace gravyTraders.Api.Core.Requests.Handlers;
 
 internal class GetCartRequestHandler : IRequestPreProcessor<GetCartRequest>, IRequestHandler<GetCartRequest, IActionResult>
 {

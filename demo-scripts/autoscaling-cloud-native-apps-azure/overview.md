@@ -6,7 +6,7 @@ In this demo, you'll get an overview of the autoscaling features of various Azur
 
 You'll also get an insight into how to use Azure Monitor to monitor the application's performance and health.
 
-All these are especially crucial for an e-commerce application like Gravy Traders, which is expected to instantly handle a large, sudden spike in number of users, with low latency and no downtime.
+All these are especially crucial for an e-commerce application like gravy Traders, which is expected to instantly handle a large, sudden spike in number of users, with low latency and no downtime.
 
 ## Before You Begin
 
@@ -14,7 +14,7 @@ All these are especially crucial for an e-commerce application like Gravy Trader
 
 ## Walkthrough: Metrics & Dashboards
 
-1. In the Azure portal, you can navigate to the Azure Container App in the `Gravy-traders-rg` resource group.
+1. In the Azure portal, you can navigate to the Azure Container App in the `gravy-traders-rg` resource group.
 
    ![ACA](./media/aca.png)
 

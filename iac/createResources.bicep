@@ -22,9 +22,9 @@ param tenantId string = subscription().tenantId
 // aks
 param aksLinuxAdminUsername string // value supplied via parameters file
 
-param prefix string = 'Gravytraders'
+param prefix string = 'gravytraders'
 
-param prefixHyphenated string = 'Gravy-traders'
+param prefixHyphenated string = 'gravy-traders'
 
 // sql
 param sqlServerHostName string = environment().suffixes.sqlServerHostname

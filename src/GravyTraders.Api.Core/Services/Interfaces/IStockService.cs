@@ -1,4 +1,4 @@
-﻿namespace GravyTraders.Api.Core.Services.Interfaces;
+﻿namespace gravyTraders.Api.Core.Services.Interfaces;
 
 internal interface IStockService
 {

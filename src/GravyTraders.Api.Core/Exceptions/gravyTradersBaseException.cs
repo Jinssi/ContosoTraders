@@ -1,8 +1,8 @@
-﻿namespace GravyTraders.Api.Core.Exceptions;
+﻿namespace gravyTraders.Api.Core.Exceptions;
 
-public abstract class GravyTradersBaseException : Exception
+public abstract class gravyTradersBaseException : Exception
 {
-    protected GravyTradersBaseException(string message) : base(message)
+    protected gravyTradersBaseException(string message) : base(message)
     {
     }
 

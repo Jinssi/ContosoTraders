@@ -14,10 +14,10 @@ const Getapp = ({ t }) => {
                 <h1 className="getapp-title">{t("home.getapp.title")}</h1>
                 <p className="getapp-text">{t("home.getapp.subtitle")}</p>
                 <div className="getapp__stores-wrapper">
-                    <a className="btn btn--getapp btn--getapp--left" href="https://aka.ms/Gravytradersios">
+                    <a className="btn btn--getapp btn--getapp--left" href="https://aka.ms/gravytradersios">
                         <div className="getapp-btntext">Get it now for </div>iOS
                     </a>
-                    <a className="btn btn--getapp btn--getapp--right" href="https://aka.ms/Gravytradersandroid">
+                    <a className="btn btn--getapp btn--getapp--right" href="https://aka.ms/gravytradersandroid">
                         <div className="getapp-btntext">Get it now for </div>Android
                     </a>
                 </div>
@@ -33,7 +33,7 @@ const Getapp = ({ t }) => {
                 />
                 <img
                     srcSet={`${MockupSmall} 1x, ${MockupSmall2} 2x`}
-                    alt="Black iPhone displaying Gravy Traders' home screen"
+                    alt="Black iPhone displaying gravy Traders' home screen"
                 />
             </picture>
         </section>

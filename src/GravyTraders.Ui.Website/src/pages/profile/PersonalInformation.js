@@ -17,7 +17,7 @@ import Visibility from "@material-ui/icons/Visibility";
 
 import { useFormik } from "formik";
 import * as yup from "yup";
-import delete_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/delete_icon.svg";
+import delete_icon from "../../assets/images/original/gravy_Assets/profile_page_assets/delete_icon.svg";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 
 // const phoneRegExp =

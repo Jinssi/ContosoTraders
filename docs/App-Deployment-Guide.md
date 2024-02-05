@@ -1,10 +1,10 @@
-<html><h1> Gravy Traders - Deployment Guide </h1></html>
+<html><h1> gravy Traders - Deployment Guide </h1></html>
 
 
-This deployment  guide is designed to help you deploy Gravy Traders application in your Azure environment. Gravy Trader is a micro-services-based application, leveraging various Azure services including Azure Kubernetes Service, App Services, Cosmos DB, SQL Database and many more. 
+This deployment  guide is designed to help you deploy gravy Traders application in your Azure environment. gravy Trader is a micro-services-based application, leveraging various Azure services including Azure Kubernetes Service, App Services, Cosmos DB, SQL Database and many more. 
 While it’s possible to deploy overall solution using Azure Portal, CLI, PowerShell, ARM Templates, we will be using a combination of GitHub Actions and bicep templates to automate the provisioning of overall solution. 
 
-This will deploy all components defined in the Gravy Traders [architecture](../docs/architecture/Gravy-traders-enhancements.drawio.png) 
+This will deploy all components defined in the gravy Traders [architecture](../docs/architecture/gravy-traders-enhancements.drawio.png) 
 
 <html><h3>Pre-Requisites</h3></html>
 
@@ -42,9 +42,9 @@ Let’s create an Azure Service Principal and assign required permissions.
 3.	Select App registrations.
 4.	Select New registration.
 5.	Provide following values and click Register
-	1. Name:  “GravyTraders-GitHubActions”
+	1. Name:  “gravyTraders-GitHubActions”
 	2. Supported Account Type: Select the first option - Accounts in the organizational directory only(Default Directory-Single Tenant)
-	3. Redirect URI: Select Web and enter the url : https://www.Gravytraders.com or your domain url you can enter.
+	3. Redirect URI: Select Web and enter the url : https://www.gravytraders.com or your domain url you can enter.
 
      ![img3](images/appreg.png)
 
@@ -56,7 +56,7 @@ Once the app is registered, please make a note of it’s Application ID,  Secret
      ![img4](images/APPIDCTenantID.png)
      
 3.	Navigate to Secrets and create a new secret.
-	1. Name: GravyTrader-Secret-GitHubActions
+	1. Name: gravyTrader-Secret-GitHubActions
 	2. Validity – 1 Year
 4.	Make a note of the secret value. Please keep it in a safe location until next step. This value can not be retrieved once you navigate away from this page. 
 
@@ -75,7 +75,7 @@ Your subscription is now ready for deployment.
 
 <h3>Accept Responsible AI Terms</h3>
 
-In Gravy Traders, we are using Azure Cognitive Service to facilitate the search by image functionality. Before you can use Azure AI services, you must accept the terms for Responsible AI usage. 
+In gravy Traders, we are using Azure Cognitive Service to facilitate the search by image functionality. Before you can use Azure AI services, you must accept the terms for Responsible AI usage. 
 In order to accept the terms, you will need to manually provision a Cognitive Service Resource using Azure Portal, with which you will be able to accept the terms. 
 It is recommended to create this temporary in a separate resource group, so that you can delete the resource group once the terms are accepted. 
 1. Select the following link to create a Computer Vision resource:
@@ -100,15 +100,15 @@ Once the provisioning is completed, you can delete the resource group “Cogniti
 
 <h2>Preparing your GitHub Account</h2>
 
-In this step, you will form the original GravyTraders GitHub repository to your GitHub Account and prepare for deployment. 
-Fork the Gravy Traders Repo
+In this step, you will form the original gravyTraders GitHub repository to your GitHub Account and prepare for deployment. 
+Fork the gravy Traders Repo
 
 1.	Login to GitHub by visiting [github](https://github.com).
-2.	Open [GravyTraders repository](https://github.com/microsoft/GravyTraders) and Click on Fork
+2.	Open [gravyTraders repository](https://github.com/microsoft/gravyTraders) and Click on Fork
 	
 	![img7](images/Repofork.png)
 
-3.	You should now a clone of this repository in your GitHub Account, with https://github.com/YOURUSERNAME/GravyTraders. 
+3.	You should now a clone of this repository in your GitHub Account, with https://github.com/YOURUSERNAME/gravyTraders. 
 4.	You will be using this repository for deployment. Since it exists in your GitHub Account, you will be able to make changes to the contents as well, including source code. 
 
 
@@ -123,7 +123,7 @@ These secretes will be used by GitHub Action Workflows during deployment and CI/
 	
 Let’s get started
 
-1. Login to GitHub and navigate to your fork of Gravy traders repository. https://github.com/YOURUSERNAME/GravyTraders.
+1. Login to GitHub and navigate to your fork of gravy traders repository. https://github.com/YOURUSERNAME/gravyTraders.
 2. Under your repository name, click on the "Settings" tab.
 	
 	![img8](images/settingsgithub.png)
@@ -174,22 +174,22 @@ Let’s get started
 Your GitHub repository is now ready for deployment. 
 
 
-<h2>Deploying the Gravy Traders Application</h2>
+<h2>Deploying the gravy Traders Application</h2>
 
 
 You are now ready to start deployment of application to your Azure account. We will be using GitHub Action workflows for this deployment. 
 We will be using following workflows as part of deployment.  You can review workflow code by navigating to .github/workflows directory in your repository. 
-•	Gravy-traders-provisioning-deployment: 
+•	gravy-traders-provisioning-deployment: 
 
 Let’s get started. 
 
-1. Login to GitHub and navigate to your fork of Gravy traders repository. https://github.com/YOURUSERNAME/GravyTraders
+1. Login to GitHub and navigate to your fork of gravy traders repository. https://github.com/YOURUSERNAME/gravyTraders
 2. Navigate to Actions and Accept enabling the workflows
 		
 	![img13](images/workflowenable.png)
 	
 	
-3. In the workflow list, select the “Gravy-traders-provisioning-deployment” workflow.
+3. In the workflow list, select the “gravy-traders-provisioning-deployment” workflow.
 	
 4. Click on Run Workflow and run the workflow with main branch. 
 	
@@ -216,7 +216,7 @@ If you find workflow failure error due to missing Azure resources (Key vault, CD
 
 <h2>Validate & test the deployment</h2>
 
-Gravy Traders application is now ready in your subscription. Let us review and validate the deployment to ensure application is functioning as expected.
+gravy Traders application is now ready in your subscription. Let us review and validate the deployment to ensure application is functioning as expected.
 
 <h3>Review Provisioned Azure Resources</h3>
 
@@ -229,11 +229,11 @@ Please refer to the architecture walkthrough demo script and technical walkthrou
 	
       ![img30](images/test1.png)
 	
-3.	Select the CDN profile starting with name Gravy-traders-cdn$ENVIRONMENTNAME 
+3.	Select the CDN profile starting with name gravy-traders-cdn$ENVIRONMENTNAME 
 
      ![img31](images/Test2.png)
 	
-5.	Review the Endpoints and make a note of the URL for endpoint containing “UI2” website. It should look like https://Gravy-traders-ui2$ENVNAME.azureedge.net
+5.	Review the Endpoints and make a note of the URL for endpoint containing “UI2” website. It should look like https://gravy-traders-ui2$ENVNAME.azureedge.net
       
       ![img32](images/Test3.png)
       
@@ -247,7 +247,7 @@ Please refer to the architecture walkthrough demo script and technical walkthrou
        
 9.	Test the website by navigating through various pages, search by image etc. 
 	
-If you would like to add a custom domain, like Gravytraders.com, you can purchase the domain and add to CDN profile. Please see documentation [here](https://learn.microsoft.com/en-us/azure/cdn/cdn-map-content-to-custom-domain?tabs=azure-dns%2Cazure-portal%2Cazure-portal-cleanup).
+If you would like to add a custom domain, like gravytraders.com, you can purchase the domain and add to CDN profile. Please see documentation [here](https://learn.microsoft.com/en-us/azure/cdn/cdn-map-content-to-custom-domain?tabs=azure-dns%2Cazure-portal%2Cazure-portal-cleanup).
 
 <h2>Deploy Inventory Management PowerApps</h2>
 
@@ -303,12 +303,12 @@ This includes some of the common problems you may during deployment and approach
 	
 When you run the workflow, it shows following warnings.
 	
-**Error: WARNING: /home/runner/work/GravyTraders/GravyTraders/iac/createResources.bicep(191,50) : Warning no-hardcoded-env-urls: Environment URLs should not be hardcoded. Use the environment() function to ensure compatibility across clouds. Found this disallowed host: "database.windows.net". **
+**Error: WARNING: /home/runner/work/gravyTraders/gravyTraders/iac/createResources.bicep(191,50) : Warning no-hardcoded-env-urls: Environment URLs should not be hardcoded. Use the environment() function to ensure compatibility across clouds. Found this disallowed host: "database.windows.net". **
 
-**Warning: WARNING: /home/runner/work/GravyTraders/GravyTraders/iac/createResources.bicep(191,50) : Warning no-hardcoded-env-urls: Environment URLs should not be hardcoded. Use the environment() function to ensure compatibility across clouds. Found this disallowed host: "database.windows.net". **
+**Warning: WARNING: /home/runner/work/gravyTraders/gravyTraders/iac/createResources.bicep(191,50) : Warning no-hardcoded-env-urls: Environment URLs should not be hardcoded. Use the environment() function to ensure compatibility across clouds. Found this disallowed host: "database.windows.net". **
 
 
-This does not block the deployment and workflow will run successfully. It does not have any other impact. It is being tracked here https://github.com/microsoft/GravyTraders/issues/68 
+This does not block the deployment and workflow will run successfully. It does not have any other impact. It is being tracked here https://github.com/microsoft/gravyTraders/issues/68 
 
 
 
@@ -320,5 +320,5 @@ This project is community supported. Please raise issue via GitHub incase of iss
 
 Once you are done deploying, testing, exploring, you can delete the provisioned RGs to prevent incurring additional cost. 
 Delete the following resource groups.
-1.	Gravy-traders-rg
-2.	Gravy-traders-aks-nodes-rg
+1.	gravy-traders-rg
+2.	gravy-traders-aks-nodes-rg

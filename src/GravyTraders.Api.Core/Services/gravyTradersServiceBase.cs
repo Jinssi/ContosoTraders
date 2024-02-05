@@ -1,14 +1,14 @@
-﻿namespace GravyTraders.Api.Core.Services;
+﻿namespace gravyTraders.Api.Core.Services;
 
-internal abstract class GravyTradersServiceBase
+internal abstract class gravyTradersServiceBase
 {
     protected readonly IConfiguration Configuration;
 
-    protected readonly ILogger<GravyTradersServiceBase> Logger;
+    protected readonly ILogger<gravyTradersServiceBase> Logger;
 
     protected readonly IMapper Mapper;
 
-    protected GravyTradersServiceBase(IMapper mapper, IConfiguration configuration, ILogger<GravyTradersServiceBase> logger)
+    protected gravyTradersServiceBase(IMapper mapper, IConfiguration configuration, ILogger<gravyTradersServiceBase> logger)
     {
         Mapper = mapper;
         Configuration = configuration;

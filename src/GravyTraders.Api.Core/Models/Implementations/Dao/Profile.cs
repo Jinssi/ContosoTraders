@@ -1,4 +1,4 @@
-﻿namespace GravyTraders.Api.Core.Models.Implementations.Dao;
+﻿namespace gravyTraders.Api.Core.Models.Implementations.Dao;
 
 public class Profile
 {

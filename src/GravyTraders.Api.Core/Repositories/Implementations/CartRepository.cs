@@ -1,6 +1,6 @@
 ﻿using Microsoft.Azure.Cosmos;
 
-namespace GravyTraders.Api.Core.Repositories.Implementations;
+namespace gravyTraders.Api.Core.Repositories.Implementations;
 
 public class CartRepository : CosmosGenericRepositoryBase<CartDao>, ICartRepository
 {

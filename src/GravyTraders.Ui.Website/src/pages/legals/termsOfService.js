@@ -14,7 +14,7 @@ const TermsOfService = (props) => {
                     <p className="paragraph">
                         <b>Introduction</b>
                         <br/>
-                        These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Website Name accessible at Gravy traders. 
+                        These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Website Name accessible at gravy traders. 
                         <br/><br/>
                         By using our website, you accepted these terms and conditions in full. If you disagree with these terms and conditions or any part of these terms and conditions, you must not use our website. 
                         <br/><br/>

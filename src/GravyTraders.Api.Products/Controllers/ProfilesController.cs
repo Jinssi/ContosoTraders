@@ -1,8 +1,8 @@
-﻿namespace GravyTraders.Api.Products.Controllers;
+﻿namespace gravyTraders.Api.Products.Controllers;
 
 [Route("v1/[controller]")]
 [Produces("application/json")]
-public class ProfilesController : GravyTradersControllerBase
+public class ProfilesController : gravyTradersControllerBase
 {
     public ProfilesController(IMediator mediator) : base(mediator)
     {
@@ -21,7 +21,7 @@ public class ProfilesController : GravyTradersControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetProfile()
     {
-        var email = "admin@Gravytraders.com";
+        var email = "admin@gravytraders.com";
         var request = new GetProfileRequest
         {
             Email = email

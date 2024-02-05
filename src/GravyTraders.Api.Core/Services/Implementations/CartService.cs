@@ -1,6 +1,6 @@
-﻿namespace GravyTraders.Api.Core.Services.Implementations;
+﻿namespace gravyTraders.Api.Core.Services.Implementations;
 
-internal class CartService : GravyTradersServiceBase, ICartService
+internal class CartService : gravyTradersServiceBase, ICartService
 {
     private readonly ICartRepository _cartRepository;
 

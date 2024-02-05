@@ -1,4 +1,4 @@
-﻿namespace GravyTraders.Api.Core.Requests.Definitions;
+﻿namespace gravyTraders.Api.Core.Requests.Definitions;
 
 public class UpdateCartItemQuantityRequest : IRequest<IActionResult>
 {

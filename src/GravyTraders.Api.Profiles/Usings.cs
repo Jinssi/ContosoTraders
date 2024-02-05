@@ -1,1 +1,1 @@
-﻿global using GravyTraders.Api.Core.Controllers;
+﻿global using gravyTraders.Api.Core.Controllers;

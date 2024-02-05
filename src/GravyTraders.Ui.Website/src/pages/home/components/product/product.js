@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-// import WishlistIcon from '../../../../assets/images/original/Gravy_Assets/Icons/wishlist_icon.svg'
+// import WishlistIcon from '../../../../assets/images/original/gravy_Assets/Icons/wishlist_icon.svg'
 import { useHistory } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {

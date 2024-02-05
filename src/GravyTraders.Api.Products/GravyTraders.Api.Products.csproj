@@ -13,7 +13,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\GravyTraders.Api.Core\GravyTraders.Api.Core.csproj" />
+		<ProjectReference Include="..\gravyTraders.Api.Core\gravyTraders.Api.Core.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

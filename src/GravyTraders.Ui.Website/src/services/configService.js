@@ -47,7 +47,7 @@ const ConfigService = {
       //   data: {
       //     auth: null,
       //     apiUrl: "https://f6b8ea119d5d435c846c.westus2.aksapp.io/webbff/v1",
-      //     apiUrlShoppingCart: "https://backend.Gravytraders.com/cart-api",
+      //     apiUrlShoppingCart: "https://backend.gravytraders.com/cart-api",
       //     useB2C: false,
       //     b2CAuth: { clientId: "", authority: "", scopes: "" },
       //     cart: null,

@@ -354,7 +354,7 @@ button[aria-label='Next'] {
 }
 .courousel-style{
   padding: 70px;
-  /* background-image: url('./assets/images/original/Gravy_Assets/Slider_section/hero_banner.jpg') !important; */
+  /* background-image: url('./assets/images/original/gravy_Assets/Slider_section/hero_banner.jpg') !important; */
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: right !important;
@@ -530,7 +530,7 @@ button[aria-label='Next'] {
 
 /* ********************************* */
 .BannerSection {
-  background-image: url("./assets/images/original/Gravy_Assets/Static_Banner/banner_controller.jpg");
+  background-image: url("./assets/images/original/gravy_Assets/Static_Banner/banner_controller.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
@@ -748,7 +748,7 @@ button[aria-label='Next'] {
 .final-section-container {
   background-color: #80808030;
   height: 800px;
-  background-image: url('./assets/images/original/Gravy_Assets/5_Static_Banner/static_banner_2.jpg') ;
+  background-image: url('./assets/images/original/gravy_Assets/5_Static_Banner/static_banner_2.jpg') ;
   background-repeat: no-repeat;
 }
 .final-section-container  .grid-container {
@@ -847,7 +847,7 @@ button[aria-label='Next'] {
 
 .ErrorSection {
  margin-top: 137px;
- background-image: url("./assets/images/original/Gravy_Assets/404_page_assets/background_image.jpg"); 
+ background-image: url("./assets/images/original/gravy_Assets/404_page_assets/background_image.jpg"); 
  background-size: cover;
  padding-top: 130px;
  padding-bottom: 130px;

@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Button, Grid } from '@material-ui/core'
-import LocalMallIcon from '../../../../assets/images/original/Gravy_Assets/Icons/cart-icon-copy.svg'
-import heroBg from '../../../../assets/images/original/Gravy_Assets/Slider_section/hero_banner.jpg'
+import LocalMallIcon from '../../../../assets/images/original/gravy_Assets/Icons/cart-icon-copy.svg'
+import heroBg from '../../../../assets/images/original/gravy_Assets/Slider_section/hero_banner.jpg'
 import { useHistory } from 'react-router-dom';
 export default function Corousel(props)
 {

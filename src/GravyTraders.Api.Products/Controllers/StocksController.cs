@@ -1,8 +1,8 @@
-﻿namespace GravyTraders.Api.Products.Controllers;
+﻿namespace gravyTraders.Api.Products.Controllers;
 
 [Route("v1/[controller]")]
 [Produces("application/json")]
-public class StocksController : GravyTradersControllerBase
+public class StocksController : gravyTradersControllerBase
 {
     public StocksController(IMediator mediator) : base(mediator)
     {

@@ -23,7 +23,7 @@ import {
 
 import "./i18n";
 import "./main.scss";
-import warningIcon from './assets/images/original/Gravy_Assets/Icons/information_icon.svg'
+import warningIcon from './assets/images/original/gravy_Assets/Icons/information_icon.svg'
 
 class App extends Component {
   constructor() {

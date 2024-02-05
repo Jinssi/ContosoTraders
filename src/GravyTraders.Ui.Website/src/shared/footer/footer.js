@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 
-import phoneLogo from '../../assets/images/original/Gravy_Assets/Icons/telephone_icon.svg'
-import emailLogo from '../../assets/images/original/Gravy_Assets/Icons/email_icon.svg'
+import phoneLogo from '../../assets/images/original/gravy_Assets/Icons/telephone_icon.svg'
+import emailLogo from '../../assets/images/original/gravy_Assets/Icons/email_icon.svg'
 import { ReactComponent as Logo } from '../../assets/images/logo-horizontal.svg';
 
 
@@ -16,8 +16,8 @@ const Footer = () => {
                 <Logo />
             </Link>
             <p  className='mt-2 text-justify'>
-            Gravy Traders is an e-commerce platform that specializes in electronic items. Our website offers a wide range of electronics, including smartphones, laptops, and other popular gadgets.
-            We pride ourselves on providing high-quality products at competitive prices, and our dedicated customer service team is always on hand to assist with any queries or concerns. With fast and secure shipping, convenient payment options, and a user-friendly interface, Gravy Traders is the perfect place to shop for all your electronic needs. 
+            gravy Traders is an e-commerce platform that specializes in electronic items. Our website offers a wide range of electronics, including smartphones, laptops, and other popular gadgets.
+            We pride ourselves on providing high-quality products at competitive prices, and our dedicated customer service team is always on hand to assist with any queries or concerns. With fast and secure shipping, convenient payment options, and a user-friendly interface, gravy Traders is the perfect place to shop for all your electronic needs. 
             </p>
         </Grid>
         <Grid item xs={2} className='section-2'>
@@ -58,7 +58,7 @@ const Footer = () => {
                             <img src={emailLogo} alt='email-logo'/>
                         </div>
                         <div className='list-element'>
-                            {' '}support@Gravytraders.com
+                            {' '}support@gravytraders.com
                         </div>
                     </div> 
                 </li>

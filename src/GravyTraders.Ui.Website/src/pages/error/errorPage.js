@@ -1,6 +1,6 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
-import errorpic from "../../assets/images/original/Gravy_Assets/404_page_assets/404_image.svg";
+import errorpic from "../../assets/images/original/gravy_Assets/404_page_assets/404_image.svg";
 import { useHistory } from 'react-router-dom';
 
 const ErrorPage = () => {

@@ -1,21 +1,21 @@
-# Gravy Traders
+# gravy Traders
 
 ![Logo](./docs/images/logo-1280x640.png)
 
 ## Documentation and Resources
 
 * Application Links
-  * [UI](https://www.Gravytraders.com/)
-  * [Carts API](https://Gravy-traders-cartsprod.delightfuldune-ced90d47.eastus.azurecontainerapps.io/swagger)
-  * [Products API](https://Gravy-traders-productsprod.eastus.cloudapp.azure.com/swagger/)
+  * [UI](https://www.gravytraders.com/)
+  * [Carts API](https://gravy-traders-cartsprod.delightfuldune-ced90d47.eastus.azurecontainerapps.io/swagger)
+  * [Products API](https://gravy-traders-productsprod.eastus.cloudapp.azure.com/swagger/)
 * [Deployment Guide](./docs/App-Deployment-Guide.md)
   * [Deployment Guide for Inventory Management PowerApp](./docs/Inventory-power-app-deployment-guide.md)
 * [Contributing](./CONTRIBUTING.md)
 * [Bicep Templates](./iac/)
 * [Load Tests](./tests/loadtests/)
 * [Github Workflows](./.github/workflows/)
-  * [![Gravy-traders-provisioning-deployment](https://github.com/microsoft/GravyTraders/actions/workflows/Gravy-traders-provisioning-deployment.yml/badge.svg)](https://github.com/microsoft/GravyTraders/actions/workflows/Gravy-traders-provisioning-deployment.yml)
-  * [![Gravy-traders-load-testing](https://github.com/microsoft/GravyTraders/actions/workflows/Gravy-traders-load-testing.yml/badge.svg)](https://github.com/microsoft/GravyTraders/actions/workflows/Gravy-traders-load-testing.yml)
+  * [![gravy-traders-provisioning-deployment](https://github.com/microsoft/gravyTraders/actions/workflows/gravy-traders-provisioning-deployment.yml/badge.svg)](https://github.com/microsoft/gravyTraders/actions/workflows/gravy-traders-provisioning-deployment.yml)
+  * [![gravy-traders-load-testing](https://github.com/microsoft/gravyTraders/actions/workflows/gravy-traders-load-testing.yml/badge.svg)](https://github.com/microsoft/gravyTraders/actions/workflows/gravy-traders-load-testing.yml)
 
 ## Demo Scripts
 
@@ -29,7 +29,7 @@
 
 ## Architecture
 
-![Architecture](./docs/architecture/Gravy-traders-enhancements.drawio.png)
+![Architecture](./docs/architecture/gravy-traders-enhancements.drawio.png)
 
 ## Contributing
 

@@ -1,6 +1,6 @@
-namespace GravyTraders.Api.Core.Services.Implementations;
+namespace gravyTraders.Api.Core.Services.Implementations;
 
-internal class ImageSearchService : GravyTradersServiceBase, IImageSearchService
+internal class ImageSearchService : gravyTradersServiceBase, IImageSearchService
 {
     private readonly IImageAnalysisService _imageAnalysisService;
 

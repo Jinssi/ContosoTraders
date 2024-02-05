@@ -1,7 +1,7 @@
-﻿namespace GravyTraders.Api.Carts.Controllers;
+﻿namespace gravyTraders.Api.Carts.Controllers;
 
 [Route("v1/[controller]")]
-public class ProfilesController : GravyTradersControllerBase
+public class ProfilesController : gravyTradersControllerBase
 {
     public ProfilesController(IMediator mediator) : base(mediator)
     {

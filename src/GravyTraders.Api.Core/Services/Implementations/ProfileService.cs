@@ -1,8 +1,8 @@
-﻿using Profile = GravyTraders.Api.Core.Models.Implementations.Dao.Profile;
+﻿using Profile = gravyTraders.Api.Core.Models.Implementations.Dao.Profile;
 
-namespace GravyTraders.Api.Core.Services.Implementations;
+namespace gravyTraders.Api.Core.Services.Implementations;
 
-internal class ProfileService : GravyTradersServiceBase, IProfileService
+internal class ProfileService : gravyTradersServiceBase, IProfileService
 {
     private readonly ProfilesDbContext _profileRepository;
 

@@ -1,11 +1,11 @@
-﻿namespace GravyTraders.Api.Core.Controllers;
+﻿namespace gravyTraders.Api.Core.Controllers;
 
 [ApiController]
-public class GravyTradersControllerBase : ControllerBase
+public class gravyTradersControllerBase : ControllerBase
 {
     private readonly IMediator _mediator;
 
-    protected GravyTradersControllerBase(IMediator mediator)
+    protected gravyTradersControllerBase(IMediator mediator)
     {
         _mediator = mediator;
     }
@@ -16,9 +16,9 @@ public class GravyTradersControllerBase : ControllerBase
         {
             return await _mediator.Send(request);
         }
-        catch (GravyTradersBaseException GravyTradersBaseException)
+        catch (gravyTradersBaseException gravyTradersBaseException)
         {
-            return GravyTradersBaseException.ToActionResult();
+            return gravyTradersBaseException.ToActionResult();
         }
         catch (ValidationException validationException)
         {

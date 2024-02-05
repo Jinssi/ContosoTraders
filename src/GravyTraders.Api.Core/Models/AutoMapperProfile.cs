@@ -1,7 +1,7 @@
 ﻿using Profile = AutoMapper.Profile;
-using ProfileDao = GravyTraders.Api.Core.Models.Implementations.Dao.Profile;
+using ProfileDao = gravyTraders.Api.Core.Models.Implementations.Dao.Profile;
 
-namespace GravyTraders.Api.Core.Models;
+namespace gravyTraders.Api.Core.Models;
 
 public class AutoMapperProfile : Profile
 {

@@ -5,8 +5,8 @@ import {
   Grid,
   CardActionArea,
 } from "@material-ui/core";
-import laptopgirl from "../../../../assets/images/original/Gravy_Assets/Grid_Products_Collection/banner_1.jpg";
-import laptoppic from "../../../../assets/images/original/Gravy_Assets/Grid_Products_Collection/product_image.png";
+import laptopgirl from "../../../../assets/images/original/gravy_Assets/Grid_Products_Collection/banner_1.jpg";
+import laptoppic from "../../../../assets/images/original/gravy_Assets/Grid_Products_Collection/product_image.png";
 import { useHistory } from "react-router-dom";
 function Gridsection() {
   const history = useHistory()

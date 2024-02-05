@@ -18,7 +18,7 @@ This section has already been covered in our previous overview document. You can
 
 ## Walkthrough: Exploring the application's infrastructure on Azure
 
-Open the Azure Portal, and navigate to the resource group that was created for this demo. The resource group name will generally be `Gravy-traders-rg`.
+Open the Azure Portal, and navigate to the resource group that was created for this demo. The resource group name will generally be `gravy-traders-rg`.
 
 ![Resource Group](./media/rg.png)
 

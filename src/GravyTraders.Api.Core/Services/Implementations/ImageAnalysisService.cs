@@ -1,6 +1,6 @@
-﻿namespace GravyTraders.Api.Core.Services.Implementations;
+﻿namespace gravyTraders.Api.Core.Services.Implementations;
 
-internal class ImageAnalysisService : GravyTradersServiceBase, IImageAnalysisService
+internal class ImageAnalysisService : gravyTradersServiceBase, IImageAnalysisService
 {
     public ImageAnalysisService(IMapper mapper, IConfiguration configuration, ILogger<ImageAnalysisService> logger) : base(mapper, configuration, logger)
     {

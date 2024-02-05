@@ -9,11 +9,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 // import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { useHistory } from 'react-router-dom';
-import laptopsImg from '../../assets/images/original/Gravy_Assets/Mega_menu_dropdown_assets/laptop_icon.svg';
-import controllersImg from '../../assets/images/original/Gravy_Assets/Mega_menu_dropdown_assets/controllers_icon.svg';
-import desktopsImg from '../../assets/images/original/Gravy_Assets/Mega_menu_dropdown_assets/desktops_icon.svg';
-import mobilesImg from '../../assets/images/original/Gravy_Assets/Mega_menu_dropdown_assets/mobiles_icon.svg';
-import monitorImg from '../../assets/images/original/Gravy_Assets/Mega_menu_dropdown_assets/monitor_icon.svg';
+import laptopsImg from '../../assets/images/original/gravy_Assets/Mega_menu_dropdown_assets/laptop_icon.svg';
+import controllersImg from '../../assets/images/original/gravy_Assets/Mega_menu_dropdown_assets/controllers_icon.svg';
+import desktopsImg from '../../assets/images/original/gravy_Assets/Mega_menu_dropdown_assets/desktops_icon.svg';
+import mobilesImg from '../../assets/images/original/gravy_Assets/Mega_menu_dropdown_assets/mobiles_icon.svg';
+import monitorImg from '../../assets/images/original/gravy_Assets/Mega_menu_dropdown_assets/monitor_icon.svg';
 const StyledMenu = withStyles({
   paper: {
     border: '1px solid #d3d4d5',

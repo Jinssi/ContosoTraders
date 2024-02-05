@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: Gravy-traders-products
+  name: gravy-traders-products
 spec:
   type: ClusterIP
   ports:
     - port: 80
   selector:
-    app: Gravy-traders-products
+    app: gravy-traders-products

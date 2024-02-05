@@ -1,6 +1,6 @@
-﻿using Profile = GravyTraders.Api.Core.Models.Implementations.Dao.Profile;
+﻿using Profile = gravyTraders.Api.Core.Models.Implementations.Dao.Profile;
 
-namespace GravyTraders.Api.Core.Services.Interfaces;
+namespace gravyTraders.Api.Core.Services.Interfaces;
 
 internal interface IProfileService
 {

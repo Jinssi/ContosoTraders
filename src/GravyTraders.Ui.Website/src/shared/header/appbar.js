@@ -14,10 +14,10 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../../assets/images/logo-horizontal.svg';
-import SearchIconNew from '../../assets/images/original/Gravy_Assets/Icons/image_search_icon.svg'
-import WishlistIcon from '../../assets/images/original/Gravy_Assets/Icons/wishlist_icon.svg'
-import ProfileIcon from '../../assets/images/original/Gravy_Assets/Icons/profile_icon.svg'
-import BagIcon from '../../assets/images/original/Gravy_Assets/Icons/cart_icon.svg'
+import SearchIconNew from '../../assets/images/original/gravy_Assets/Icons/image_search_icon.svg'
+import WishlistIcon from '../../assets/images/original/gravy_Assets/Icons/wishlist_icon.svg'
+import ProfileIcon from '../../assets/images/original/gravy_Assets/Icons/profile_icon.svg'
+import BagIcon from '../../assets/images/original/gravy_Assets/Icons/cart_icon.svg'
 import UploadFile from '../uploadFile/uploadFile';
 import { clickAction, submitAction } from '../../actions/actions';
 import AuthB2CService from '../../services/authB2CService';
@@ -25,12 +25,12 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Alert from "react-s-alert";
 
-import logout_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/logout_icon.svg";
-// import delete_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/delete_icon.svg";
-import personal_information_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/personal_information_icon.svg";
-import my_wishlist_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/my_wishlist_icon.svg";
-import my_address_book_icons from "../../assets/images/original/Gravy_Assets/profile_page_assets/my_address_book_icons.svg";
-import my_orders_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/my_orders_icon.svg";
+import logout_icon from "../../assets/images/original/gravy_Assets/profile_page_assets/logout_icon.svg";
+// import delete_icon from "../../assets/images/original/gravy_Assets/profile_page_assets/delete_icon.svg";
+import personal_information_icon from "../../assets/images/original/gravy_Assets/profile_page_assets/personal_information_icon.svg";
+import my_wishlist_icon from "../../assets/images/original/gravy_Assets/profile_page_assets/my_wishlist_icon.svg";
+import my_address_book_icons from "../../assets/images/original/gravy_Assets/profile_page_assets/my_address_book_icons.svg";
+import my_orders_icon from "../../assets/images/original/gravy_Assets/profile_page_assets/my_orders_icon.svg";
 import { ProductService } from '../../services';
 const useStyles = makeStyles((theme) => ({
   grow: {
