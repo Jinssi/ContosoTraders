@@ -17,20 +17,20 @@ env:
   # You can specify any location for `SUB_DEPLOYMENT_REGION`. It's the region where the deployment
   # metadata will be stored, and not where the resource groups will be deployed.
   ACR_NAME: gravytradersacr
-  AKS_CLUSTER_NAME: gravy-traders-aks
-  AKS_DNS_LABEL: gravy-traders-products
-  AKS_NODES_RESOURCE_GROUP_NAME: gravy-traders-aks-nodes-rg
-  AKS_SECRET_NAME_ACR_PASSWORD: gravy-traders-acr-password
-  AKS_SECRET_NAME_KV_ENDPOINT: gravy-traders-kv-endpoint
-  AKS_SECRET_NAME_MI_CLIENTID: gravy-traders-mi-clientid
-  CARTS_ACA_NAME: gravy-traders-carts
+  AKS_CLUSTER_NAME: gravy-traders-prod-aks
+  AKS_DNS_LABEL: gravy-traders-prod-products
+  AKS_NODES_RESOURCE_GROUP_NAME: gravy-traders-prod-aks-nodes-rg
+  AKS_SECRET_NAME_ACR_PASSWORD: gravy-traders-prod-acr-password
+  AKS_SECRET_NAME_KV_ENDPOINT: gravy-traders-prod-kv-endpoint
+  AKS_SECRET_NAME_MI_CLIENTID: gravy-traders-prod-mi-clientid
+  CARTS_ACA_NAME: gravy-traders-prod-carts
   CARTS_ACR_REPOSITORY_NAME: gravytradersapicarts
-  CDN_PROFILE_NAME: gravy-traders-cdn
+  CDN_PROFILE_NAME: gravy-traders-prod-cdn
   SUB_DEPLOYMENT_REGION: northeurope
-  KV_NAME: gravytraderskv
+  KV_NAME: gravytradersprodkv
   PRODUCTS_ACR_REPOSITORY_NAME: gravytradersapiproducts
   PRODUCTS_DB_NAME: productsdb
-  PRODUCTS_DB_SERVER_NAME: gravy-traders-products
+  PRODUCTS_DB_SERVER_NAME: gravy-traders-prod-products
   PRODUCTS_DB_USER_NAME: localadmin
   PRODUCT_DETAILS_CONTAINER_NAME: product-details
   PRODUCT_IMAGES_STORAGE_ACCOUNT_NAME: gravytradersimg
