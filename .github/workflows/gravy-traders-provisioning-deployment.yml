@@ -6,11 +6,11 @@ on:
     branches: ["main"]
     paths:
       [
-        "src/GravyTraders.Api.Carts/**",
-        "src/GravyTraders.Api.Core/**",
-        "src/GravyTraders.Api.Images/**",
-        "src/GravyTraders.Api.Products/**",
-        "src/GravyTraders.Ui.Website/**",
+        "src/gravyTraders.Api.Carts/**",
+        "src/gravyTraders.Api.Core/**",
+        "src/gravyTraders.Api.Images/**",
+        "src/gravyTraders.Api.Products/**",
+        "src/gravyTraders.Ui.Website/**",
       ]
 
 env:
