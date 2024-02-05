@@ -6,7 +6,7 @@ targetScope = 'subscription'
 
 param rgLocation string = 'northeurope'
 
-param prefixHyphenated string = 'gravy-traders'
+param prefixHyphenated string = 'gravy-traders-prod'
 
 // variables
 ////////////////////////////////////////////////////////////////////////////////
