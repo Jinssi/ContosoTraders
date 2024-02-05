@@ -101,7 +101,7 @@ var imageClassifierStgAccName = '${prefix}ic${env}'
 var imageClassifierWebsiteUploadsContainerName = 'website-uploads'
 
 // cognitive service (image recognition)
-var cognitiveServiceName = '${prefixHyphenated}-cs${env}'
+var cognitiveServiceName = '${prefixHyphenated}-cs1${env}'
 
 // cdn
 var cdnProfileName = '${prefixHyphenated}-cdn${env}'
