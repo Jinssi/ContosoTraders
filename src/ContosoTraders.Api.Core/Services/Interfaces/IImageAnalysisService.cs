@@ -1,4 +1,4 @@
-﻿namespace ContosoTraders.Api.Core.Services.Interfaces;
+﻿namespace GravyTraders.Api.Core.Services.Interfaces;
 
 internal interface IImageAnalysisService
 {

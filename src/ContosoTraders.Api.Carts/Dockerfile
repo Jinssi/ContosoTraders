@@ -5,17 +5,17 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["ContosoTraders.Api.Carts/ContosoTraders.Api.Carts.csproj", "ContosoTraders.Api.Carts/"]
-COPY ["ContosoTraders.Api.Core/ContosoTraders.Api.Core.csproj", "ContosoTraders.Api.Core/"]
-RUN dotnet restore "ContosoTraders.Api.Carts/ContosoTraders.Api.Carts.csproj"
+COPY ["GravyTraders.Api.Carts/GravyTraders.Api.Carts.csproj", "GravyTraders.Api.Carts/"]
+COPY ["GravyTraders.Api.Core/GravyTraders.Api.Core.csproj", "GravyTraders.Api.Core/"]
+RUN dotnet restore "GravyTraders.Api.Carts/GravyTraders.Api.Carts.csproj"
 COPY . .
-WORKDIR "/src/ContosoTraders.Api.Carts"
-RUN dotnet build "ContosoTraders.Api.Carts.csproj" -c Release -o /app/build
+WORKDIR "/src/GravyTraders.Api.Carts"
+RUN dotnet build "GravyTraders.Api.Carts.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "ContosoTraders.Api.Carts.csproj" -c Release -o /app/publish
+RUN dotnet publish "GravyTraders.Api.Carts.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "ContosoTraders.Api.Carts.dll"]
+ENTRYPOINT ["dotnet", "GravyTraders.Api.Carts.dll"]

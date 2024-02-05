@@ -1,6 +1,6 @@
-namespace ContosoTraders.Api.Core.Exceptions;
+namespace GravyTraders.Api.Core.Exceptions;
 
-public class ProfileNotFoundException : ContosoTradersBaseException
+public class ProfileNotFoundException : GravyTradersBaseException
 {
     public ProfileNotFoundException(string email)
         : base($"Profile for email '{email}' could not be found.")

@@ -1,1 +1,1 @@
-﻿global using ContosoTraders.Api.Core.Controllers;
+﻿global using GravyTraders.Api.Core.Controllers;

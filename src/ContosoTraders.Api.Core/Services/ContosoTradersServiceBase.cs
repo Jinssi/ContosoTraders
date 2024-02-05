@@ -1,14 +1,14 @@
-﻿namespace ContosoTraders.Api.Core.Services;
+﻿namespace GravyTraders.Api.Core.Services;
 
-internal abstract class ContosoTradersServiceBase
+internal abstract class GravyTradersServiceBase
 {
     protected readonly IConfiguration Configuration;
 
-    protected readonly ILogger<ContosoTradersServiceBase> Logger;
+    protected readonly ILogger<GravyTradersServiceBase> Logger;
 
     protected readonly IMapper Mapper;
 
-    protected ContosoTradersServiceBase(IMapper mapper, IConfiguration configuration, ILogger<ContosoTradersServiceBase> logger)
+    protected GravyTradersServiceBase(IMapper mapper, IConfiguration configuration, ILogger<GravyTradersServiceBase> logger)
     {
         Mapper = mapper;
         Configuration = configuration;

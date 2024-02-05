@@ -1,8 +1,8 @@
-﻿namespace ContosoTraders.Api.Products.Controllers;
+﻿namespace GravyTraders.Api.Products.Controllers;
 
 [Route("v1/[controller]")]
 [Produces("application/json")]
-public class StocksController : ContosoTradersControllerBase
+public class StocksController : GravyTradersControllerBase
 {
     public StocksController(IMediator mediator) : base(mediator)
     {

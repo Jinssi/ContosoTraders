@@ -1,8 +1,8 @@
-﻿using Profile = ContosoTraders.Api.Core.Models.Implementations.Dao.Profile;
+﻿using Profile = GravyTraders.Api.Core.Models.Implementations.Dao.Profile;
 
-namespace ContosoTraders.Api.Core.Services.Implementations;
+namespace GravyTraders.Api.Core.Services.Implementations;
 
-internal class ProfileService : ContosoTradersServiceBase, IProfileService
+internal class ProfileService : GravyTradersServiceBase, IProfileService
 {
     private readonly ProfilesDbContext _profileRepository;
 

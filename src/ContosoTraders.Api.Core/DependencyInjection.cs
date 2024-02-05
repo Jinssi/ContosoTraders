@@ -10,7 +10,7 @@ using Microsoft.IdentityModel.Logging;
 
 [assembly: FunctionsStartup(typeof(DependencyInjection))]
 
-namespace ContosoTraders.Api.Core;
+namespace GravyTraders.Api.Core;
 
 public class DependencyInjection : FunctionsStartup
 {

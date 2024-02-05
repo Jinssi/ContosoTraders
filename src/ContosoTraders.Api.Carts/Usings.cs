@@ -1,7 +1,7 @@
 ﻿global using MediatR;
 global using Microsoft.AspNetCore.Mvc;
-global using ContosoTraders.Api.Core;
-global using ContosoTraders.Api.Core.Constants;
-global using ContosoTraders.Api.Core.Controllers;
-global using ContosoTraders.Api.Core.Models.Implementations.Dto;
-global using ContosoTraders.Api.Core.Requests.Definitions;
+global using GravyTraders.Api.Core;
+global using GravyTraders.Api.Core.Constants;
+global using GravyTraders.Api.Core.Controllers;
+global using GravyTraders.Api.Core.Models.Implementations.Dto;
+global using GravyTraders.Api.Core.Requests.Definitions;

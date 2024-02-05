@@ -1,12 +1,12 @@
-name: contoso-traders-load-testing
+name: Gravy-traders-load-testing
 
 on:
   workflow_dispatch:
 
 env:
-  KV_NAME: contosotraderskv
-  LOAD_TEST_SERVICE_NAME: contoso-traders-loadtest
-  RESOURCE_GROUP_NAME: contoso-traders-rg
+  KV_NAME: Gravytraderskv
+  LOAD_TEST_SERVICE_NAME: Gravy-traders-loadtest
+  RESOURCE_GROUP_NAME: Gravy-traders-rg
 
 jobs:
   load-test-carts-api:
@@ -28,7 +28,7 @@ jobs:
         uses: Azure/load-testing@v1.1.7
         with:
           # Path of the YAML file. Should be fully qualified path or relative to the default working directory
-          loadtestConfigFile: ./tests/loadtests/contoso-traders-carts.yaml
+          loadtestConfigFile: ./tests/loadtests/Gravy-traders-carts.yaml
           loadtestResource: ${{ env.LOAD_TEST_SERVICE_NAME }}${{ secrets.ENVIRONMENT }}
           resourceGroup: ${{ env.RESOURCE_GROUP_NAME }}
           env: |
@@ -78,7 +78,7 @@ jobs:
         uses: Azure/load-testing@v1.1.7
         with:
           # Path of the YAML file. Should be fully qualified path or relative to the default working directory
-          loadtestConfigFile: ./tests/loadtests/contoso-traders-products.yaml
+          loadtestConfigFile: ./tests/loadtests/Gravy-traders-products.yaml
           loadtestResource: ${{ env.LOAD_TEST_SERVICE_NAME }}${{ secrets.ENVIRONMENT }}
           resourceGroup: ${{ env.RESOURCE_GROUP_NAME }}
           env: |

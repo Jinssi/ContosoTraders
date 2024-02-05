@@ -1,6 +1,6 @@
-﻿namespace ContosoTraders.Api.Core.Exceptions;
+﻿namespace GravyTraders.Api.Core.Exceptions;
 
-public class ProductNotFoundException : ContosoTradersBaseException
+public class ProductNotFoundException : GravyTradersBaseException
 {
     public ProductNotFoundException(int productId)
         : base($"Product with id '{productId}' could not be found.")

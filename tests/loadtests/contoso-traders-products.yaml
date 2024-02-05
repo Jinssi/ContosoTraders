@@ -1,4 +1,4 @@
-testName: contoso-traders-products
-testPlan: contoso-traders-products.jmx
+testName: Gravy-traders-products
+testPlan: Gravy-traders-products.jmx
 description: 
 engineInstances: 1

@@ -1,7 +1,7 @@
 ﻿using Profile = AutoMapper.Profile;
-using ProfileDao = ContosoTraders.Api.Core.Models.Implementations.Dao.Profile;
+using ProfileDao = GravyTraders.Api.Core.Models.Implementations.Dao.Profile;
 
-namespace ContosoTraders.Api.Core.Models;
+namespace GravyTraders.Api.Core.Models;
 
 public class AutoMapperProfile : Profile
 {

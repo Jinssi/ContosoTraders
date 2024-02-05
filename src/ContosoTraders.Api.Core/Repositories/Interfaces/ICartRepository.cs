@@ -1,4 +1,4 @@
-﻿namespace ContosoTraders.Api.Core.Repositories.Interfaces;
+﻿namespace GravyTraders.Api.Core.Repositories.Interfaces;
 
 public interface ICartRepository : ICosmosGenericRepository<CartDao>
 {

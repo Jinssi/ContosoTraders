@@ -5,9 +5,9 @@ import MuiAccordionSummary from "@material-ui/core/AccordionSummary";
 import MuiAccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import { Grid } from "@material-ui/core";
-import description_off from "../../assets/images/original/Contoso_Assets/product_page_assets/description_off_icon.svg";
-import description_on from "../../assets/images/original/Contoso_Assets/product_page_assets/description_on_icon.svg";
-import discount_icon from "../../assets/images/original/Contoso_Assets/product_page_assets/discount.png";
+import description_off from "../../assets/images/original/Gravy_Assets/product_page_assets/description_off_icon.svg";
+import description_on from "../../assets/images/original/Gravy_Assets/product_page_assets/description_on_icon.svg";
+import discount_icon from "../../assets/images/original/Gravy_Assets/product_page_assets/discount.png";
 import { Link } from "react-router-dom";
 
 const Accordion = withStyles({

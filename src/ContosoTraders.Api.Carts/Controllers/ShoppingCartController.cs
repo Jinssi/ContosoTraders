@@ -1,7 +1,7 @@
-﻿namespace ContosoTraders.Api.Carts.Controllers;
+﻿namespace GravyTraders.Api.Carts.Controllers;
 
 [Route("v1/[controller]")]
-public class ShoppingCartController : ContosoTradersControllerBase
+public class ShoppingCartController : GravyTradersControllerBase
 {
     public ShoppingCartController(IMediator mediator) : base(mediator)
     {
@@ -66,7 +66,7 @@ public class ShoppingCartController : ContosoTradersControllerBase
     {
         var request = new GetCartRequest
         {
-            Email = "testuser@contosotraders.com"
+            Email = "testuser@Gravytraders.com"
         };
 
         return await ProcessHttpRequestAsync(request);

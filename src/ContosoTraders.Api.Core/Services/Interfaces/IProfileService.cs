@@ -1,6 +1,6 @@
-﻿using Profile = ContosoTraders.Api.Core.Models.Implementations.Dao.Profile;
+﻿using Profile = GravyTraders.Api.Core.Models.Implementations.Dao.Profile;
 
-namespace ContosoTraders.Api.Core.Services.Interfaces;
+namespace GravyTraders.Api.Core.Services.Interfaces;
 
 internal interface IProfileService
 {

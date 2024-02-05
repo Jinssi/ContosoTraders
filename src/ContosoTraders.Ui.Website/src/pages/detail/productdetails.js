@@ -3,8 +3,8 @@ import { Grid, Button,TextField,InputAdornment } from "@material-ui/core";
 import CustomizedAccordions from "./accordion";
 // import ImageSlider from "./imageslider";
 import QuantityPicker from "./productcounter";
-import add_to_bag_icon from "../../assets/images/original/Contoso_Assets/product_page_assets/add_to_bag_icon.svg";
-import add_to_wishlist_icon from "../../assets/images/original/Contoso_Assets/product_page_assets/add_to_wishlist_icon.svg";
+import add_to_bag_icon from "../../assets/images/original/Gravy_Assets/product_page_assets/add_to_bag_icon.svg";
+import add_to_wishlist_icon from "../../assets/images/original/Gravy_Assets/product_page_assets/add_to_wishlist_icon.svg";
 
 function ProductDetails(props) {
   const { name, price, imageUrl } = props.detailProductData;

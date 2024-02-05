@@ -1,6 +1,6 @@
-﻿namespace ContosoTraders.Api.Core.Exceptions;
+﻿namespace GravyTraders.Api.Core.Exceptions;
 
-public class MatchingProductsNotFoundException : ContosoTradersBaseException
+public class MatchingProductsNotFoundException : GravyTradersBaseException
 {
     public MatchingProductsNotFoundException(string tags)
         : base($"No matching products found for tags :  {tags}")

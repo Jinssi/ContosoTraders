@@ -1,6 +1,6 @@
-namespace ContosoTraders.Api.Core.Services.Implementations;
+namespace GravyTraders.Api.Core.Services.Implementations;
 
-internal class ImageSearchService : ContosoTradersServiceBase, IImageSearchService
+internal class ImageSearchService : GravyTradersServiceBase, IImageSearchService
 {
     private readonly IImageAnalysisService _imageAnalysisService;
 

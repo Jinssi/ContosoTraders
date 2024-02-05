@@ -1,4 +1,4 @@
-﻿namespace ContosoTraders.Api.Core.Models.Implementations.Dao;
+﻿namespace GravyTraders.Api.Core.Models.Implementations.Dao;
 
 public class Tag
 {

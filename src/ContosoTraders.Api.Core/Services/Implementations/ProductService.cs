@@ -1,10 +1,10 @@
-﻿using ContosoTraders.Api.Core.Models.Implementations.Dto;
+﻿using GravyTraders.Api.Core.Models.Implementations.Dto;
 using Microsoft.EntityFrameworkCore;
-using Type = ContosoTraders.Api.Core.Models.Implementations.Dao.Type;
+using Type = GravyTraders.Api.Core.Models.Implementations.Dao.Type;
 
-namespace ContosoTraders.Api.Core.Services.Implementations;
+namespace GravyTraders.Api.Core.Services.Implementations;
 
-internal class ProductService : ContosoTradersServiceBase, IProductService
+internal class ProductService : GravyTradersServiceBase, IProductService
 {
     private readonly ProductsDbContext _productRepository;
 

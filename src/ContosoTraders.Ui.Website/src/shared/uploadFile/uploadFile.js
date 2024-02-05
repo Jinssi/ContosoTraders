@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 import Alert from "react-s-alert";
 import { ProductService } from '../../services';
 
-import SearchIconNew from '../../assets/images/original/Contoso_Assets/product_page_assets/upload_icon.svg'
+import SearchIconNew from '../../assets/images/original/Gravy_Assets/product_page_assets/upload_icon.svg'
 import { DropzoneArea } from 'material-ui-dropzone'
 
 class UploadFile extends Component {

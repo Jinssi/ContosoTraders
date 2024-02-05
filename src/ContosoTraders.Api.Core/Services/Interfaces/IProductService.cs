@@ -1,6 +1,6 @@
-﻿using Type = ContosoTraders.Api.Core.Models.Implementations.Dao.Type;
+﻿using Type = GravyTraders.Api.Core.Models.Implementations.Dao.Type;
 
-namespace ContosoTraders.Api.Core.Services.Interfaces;
+namespace GravyTraders.Api.Core.Services.Interfaces;
 
 public interface IProductService
 {

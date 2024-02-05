@@ -1,6 +1,6 @@
-﻿namespace ContosoTraders.Api.Core.Services.Implementations;
+﻿namespace GravyTraders.Api.Core.Services.Implementations;
 
-internal class CartService : ContosoTradersServiceBase, ICartService
+internal class CartService : GravyTradersServiceBase, ICartService
 {
     private readonly ICartRepository _cartRepository;
 

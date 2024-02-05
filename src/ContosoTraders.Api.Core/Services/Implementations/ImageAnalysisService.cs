@@ -1,6 +1,6 @@
-﻿namespace ContosoTraders.Api.Core.Services.Implementations;
+﻿namespace GravyTraders.Api.Core.Services.Implementations;
 
-internal class ImageAnalysisService : ContosoTradersServiceBase, IImageAnalysisService
+internal class ImageAnalysisService : GravyTradersServiceBase, IImageAnalysisService
 {
     public ImageAnalysisService(IMapper mapper, IConfiguration configuration, ILogger<ImageAnalysisService> logger) : base(mapper, configuration, logger)
     {

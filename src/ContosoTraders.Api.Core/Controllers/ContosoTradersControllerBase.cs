@@ -1,11 +1,11 @@
-﻿namespace ContosoTraders.Api.Core.Controllers;
+﻿namespace GravyTraders.Api.Core.Controllers;
 
 [ApiController]
-public class ContosoTradersControllerBase : ControllerBase
+public class GravyTradersControllerBase : ControllerBase
 {
     private readonly IMediator _mediator;
 
-    protected ContosoTradersControllerBase(IMediator mediator)
+    protected GravyTradersControllerBase(IMediator mediator)
     {
         _mediator = mediator;
     }
@@ -16,9 +16,9 @@ public class ContosoTradersControllerBase : ControllerBase
         {
             return await _mediator.Send(request);
         }
-        catch (ContosoTradersBaseException contosoTradersBaseException)
+        catch (GravyTradersBaseException GravyTradersBaseException)
         {
-            return contosoTradersBaseException.ToActionResult();
+            return GravyTradersBaseException.ToActionResult();
         }
         catch (ValidationException validationException)
         {

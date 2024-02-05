@@ -1,4 +1,4 @@
-﻿namespace ContosoTraders.Api.Core.Constants;
+﻿namespace GravyTraders.Api.Core.Constants;
 
 internal class KeyVaultConstants
 {

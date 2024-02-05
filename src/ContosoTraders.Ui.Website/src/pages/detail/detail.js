@@ -28,7 +28,7 @@ class Detail extends Component {
     axios
       .post(ConfigService._logicAppUrl, {
         email: ConfigService._email,
-        headline: "Contoso Traders Customer Support",
+        headline: "Gravy Traders Customer Support",
         summary: "Customer support",
         text: "Customer support",
         userPhone: "",

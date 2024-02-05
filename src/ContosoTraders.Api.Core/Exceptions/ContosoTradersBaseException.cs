@@ -1,8 +1,8 @@
-﻿namespace ContosoTraders.Api.Core.Exceptions;
+﻿namespace GravyTraders.Api.Core.Exceptions;
 
-public abstract class ContosoTradersBaseException : Exception
+public abstract class GravyTradersBaseException : Exception
 {
-    protected ContosoTradersBaseException(string message) : base(message)
+    protected GravyTradersBaseException(string message) : base(message)
     {
     }
 

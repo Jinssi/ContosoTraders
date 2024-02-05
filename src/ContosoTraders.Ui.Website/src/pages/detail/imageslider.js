@@ -1,10 +1,10 @@
 import React from "react";
-import productdetailimg1 from "../../assets/images/original/Contoso_Assets/product_page_assets/product_image_main.jpg";
-import productdetailimg2 from "../../assets/images/original/Contoso_Assets/product_page_assets/image_2.jpg";
-import productdetailimg3 from "../../assets/images/original/Contoso_Assets/product_page_assets/image_3.jpg";
-import productdetailimg4 from "../../assets/images/original/Contoso_Assets/product_page_assets/image_4.jpg";
-import chevron_up from "../../assets/images/original/Contoso_Assets/product_page_assets/chevron_up.svg";
-import chevron_down from "../../assets/images/original/Contoso_Assets/product_page_assets/chevron_down.svg";
+import productdetailimg1 from "../../assets/images/original/Gravy_Assets/product_page_assets/product_image_main.jpg";
+import productdetailimg2 from "../../assets/images/original/Gravy_Assets/product_page_assets/image_2.jpg";
+import productdetailimg3 from "../../assets/images/original/Gravy_Assets/product_page_assets/image_3.jpg";
+import productdetailimg4 from "../../assets/images/original/Gravy_Assets/product_page_assets/image_4.jpg";
+import chevron_up from "../../assets/images/original/Gravy_Assets/product_page_assets/chevron_up.svg";
+import chevron_down from "../../assets/images/original/Gravy_Assets/product_page_assets/chevron_down.svg";
 import { Button } from "@material-ui/core";
 function ImageSlider(props) {
   const [min, setMin] = React.useState(0)

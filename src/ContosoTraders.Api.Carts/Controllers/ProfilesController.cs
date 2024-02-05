@@ -1,7 +1,7 @@
-﻿namespace ContosoTraders.Api.Carts.Controllers;
+﻿namespace GravyTraders.Api.Carts.Controllers;
 
 [Route("v1/[controller]")]
-public class ProfilesController : ContosoTradersControllerBase
+public class ProfilesController : GravyTradersControllerBase
 {
     public ProfilesController(IMediator mediator) : base(mediator)
     {

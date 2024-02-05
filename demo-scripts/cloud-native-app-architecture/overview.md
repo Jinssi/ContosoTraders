@@ -13,9 +13,9 @@ The key takeaways from this demo are:
 
 ## Walkthrough: Exploring the application's architecture and the Azure services leveraged
 
-Here's a quick snapshot of the Contoso Traders's application architecture. The various components can be broadly categorized as follows:
+Here's a quick snapshot of the Gravy Traders's application architecture. The various components can be broadly categorized as follows:
 
-![Contoso Traders Architecture](./media/cni1.png)
+![Gravy Traders Architecture](./media/cni1.png)
 
 ### DevOps
 
@@ -59,9 +59,9 @@ Microsoft Defender is used to monitor the application's security posture. It is 
 
 ## Walkthrough: Launching the application
 
-1. Open browser and navigate to [https://www.contosotraders.com/](https://www.contosotraders.com/)
+1. Open browser and navigate to [https://www.Gravytraders.com/](https://www.Gravytraders.com/)
 
-   ![Contoso Traders App](media/launchapp.png)
+   ![Gravy Traders App](media/launchapp.png)
 
    On this webpage, you'll be able to see the e-commerce store with clusters of electronic products such as laptops, game controllers, desktops, mobile phones and monitors of different brands.
 

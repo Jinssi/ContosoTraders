@@ -1,21 +1,21 @@
-# Contoso Traders
+# Gravy Traders
 
 ![Logo](./docs/images/logo-1280x640.png)
 
 ## Documentation and Resources
 
 * Application Links
-  * [UI](https://www.contosotraders.com/)
-  * [Carts API](https://contoso-traders-cartsprod.delightfuldune-ced90d47.eastus.azurecontainerapps.io/swagger)
-  * [Products API](https://contoso-traders-productsprod.eastus.cloudapp.azure.com/swagger/)
+  * [UI](https://www.Gravytraders.com/)
+  * [Carts API](https://Gravy-traders-cartsprod.delightfuldune-ced90d47.eastus.azurecontainerapps.io/swagger)
+  * [Products API](https://Gravy-traders-productsprod.eastus.cloudapp.azure.com/swagger/)
 * [Deployment Guide](./docs/App-Deployment-Guide.md)
   * [Deployment Guide for Inventory Management PowerApp](./docs/Inventory-power-app-deployment-guide.md)
 * [Contributing](./CONTRIBUTING.md)
 * [Bicep Templates](./iac/)
 * [Load Tests](./tests/loadtests/)
 * [Github Workflows](./.github/workflows/)
-  * [![contoso-traders-provisioning-deployment](https://github.com/microsoft/ContosoTraders/actions/workflows/contoso-traders-provisioning-deployment.yml/badge.svg)](https://github.com/microsoft/ContosoTraders/actions/workflows/contoso-traders-provisioning-deployment.yml)
-  * [![contoso-traders-load-testing](https://github.com/microsoft/ContosoTraders/actions/workflows/contoso-traders-load-testing.yml/badge.svg)](https://github.com/microsoft/ContosoTraders/actions/workflows/contoso-traders-load-testing.yml)
+  * [![Gravy-traders-provisioning-deployment](https://github.com/microsoft/GravyTraders/actions/workflows/Gravy-traders-provisioning-deployment.yml/badge.svg)](https://github.com/microsoft/GravyTraders/actions/workflows/Gravy-traders-provisioning-deployment.yml)
+  * [![Gravy-traders-load-testing](https://github.com/microsoft/GravyTraders/actions/workflows/Gravy-traders-load-testing.yml/badge.svg)](https://github.com/microsoft/GravyTraders/actions/workflows/Gravy-traders-load-testing.yml)
 
 ## Demo Scripts
 
@@ -29,7 +29,7 @@
 
 ## Architecture
 
-![Architecture](./docs/architecture/contoso-traders-enhancements.drawio.png)
+![Architecture](./docs/architecture/Gravy-traders-enhancements.drawio.png)
 
 ## Contributing
 

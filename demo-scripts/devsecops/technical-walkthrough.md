@@ -15,9 +15,9 @@ The key takeaways from this demo are:
   
 ## Before you Begin 
 
-You must have Contoso Traders deployed in your environment and setup with GitHub Actions.  Please refer to the deployment instructions [here](https://github.com/microsoft/ContosoTraders/blob/main/docs/App-Deployment-Guide.md)
+You must have Gravy Traders deployed in your environment and setup with GitHub Actions.  Please refer to the deployment instructions [here](https://github.com/microsoft/GravyTraders/blob/main/docs/App-Deployment-Guide.md)
 
-## Walkthrough – DevSecOps with Contoso Traders  
+## Walkthrough – DevSecOps with Gravy Traders  
 
  
 ## Walkthrough – GitHub Actions for CI/CD 
@@ -25,11 +25,11 @@ You must have Contoso Traders deployed in your environment and setup with GitHub
  
 GitHub Actions is a way to automate processes and workflows in your GitHub repository. Some of the benefits of using GitHub Actions include the ability to automate your software development lifecycle, integrate with other tools and services, including Azure services. 
 
-Let us take a look at the GitHub Actions used by Contoso Traders for CI/CD. 
+Let us take a look at the GitHub Actions used by Gravy Traders for CI/CD. 
 
-## Review Workflows used in Contoso Traders 
+## Review Workflows used in Gravy Traders 
 
-1. Navigate to [ContosoTraders](https://github.com/microsoft/ContosoTraders)
+1. Navigate to [GravyTraders](https://github.com/microsoft/GravyTraders)
 
 2. Go to the **github/workflows (1)** folder; inside, you'll find the workflow **YAML files (2)** that are used to deploy and set up the resources.  
 
@@ -37,14 +37,14 @@ Let us take a look at the GitHub Actions used by Contoso Traders for CI/CD.
     
 3. Here is a quick overview of both workflows. If you are interested, you can review the workflow code to get into more details.  
 
-    a. **Contoso-traders-provisioning-deployment:**  This workflow provisions Azure resources used for hosting the application and deploys the application and initial data to the provisioned resources. 
+    a. **Gravy-traders-provisioning-deployment:**  This workflow provisions Azure resources used for hosting the application and deploys the application and initial data to the provisioned resources. 
 
      It includes everything needed to get the application up and running in an Azure Environment.  
 
       ![image](media/provision.png)
 
  
-    b. **contoso-traders-load-testing:** This workflow runs a load testing against the ContosoTraders application using Azure Load Testing.  
+    b. **Gravy-traders-load-testing:** This workflow runs a load testing against the GravyTraders application using Azure Load Testing.  
 
       ![image](media/ct5.png)
       
@@ -52,13 +52,13 @@ Let us take a look at the GitHub Actions used by Contoso Traders for CI/CD.
 
 GitHub Actions workflows can be monitored from the Actions tab on a repository. This tab shows a list of all the active and past workflows, along with their status and any associated logs. Users can see at a glance whether their workflows are running successfully and can troubleshoot any issues that may arise. Additionally, users can set up notifications to be alerted when a workflow starts or completes, or if it encounters an error. This can help users stay on top of their workflows and ensure that their projects are running smoothly. 
 
-Let us take a look at the workflows status for Contoso Traders in this public repository.
+Let us take a look at the workflows status for Gravy Traders in this public repository.
 
-1. Navigate to [ContosoTraders/Actions](https://github.com/microsoft/ContosoTraders/actions) 
+1. Navigate to [GravyTraders/Actions](https://github.com/microsoft/GravyTraders/actions) 
 
     ![image](media/actions.png)
     
-2. Select the workflow **contoso-traders-provisioning-deployment**. This will the history of workflows execution.  
+2. Select the workflow **Gravy-traders-provisioning-deployment**. This will the history of workflows execution.  
 
     ![image](media/actions1.png)
 
@@ -81,9 +81,9 @@ Let us take a look at the workflows status for Contoso Traders in this public re
 
 Now that we have reviewed the GitHub Actions workflows, let us take a step-by-step approach to test the end-to-end CI/CD process.  
 
-Let us take a fictious scenario, Contoso Traders marketing team requires changing the about section in footer.  
+Let us take a fictious scenario, Gravy Traders marketing team requires changing the about section in footer.  
 
-Currently, it is set to “Contoso Traders is an e-commerce platform that specializes in electronic items. Our website offers a wide range of electronics, including smartphones, laptops, and other popular gadgets.” 
+Currently, it is set to “Gravy Traders is an e-commerce platform that specializes in electronic items. Our website offers a wide range of electronics, including smartphones, laptops, and other popular gadgets.” 
 
  
   ![image](media/L300-1.png)
@@ -91,19 +91,19 @@ Currently, it is set to “Contoso Traders is an e-commerce platform that specia
 
 Your marketing team requires changing this to following 
 
-Contoso Traders is one stop shop for electronics items including smartphones, laptops, and other popular gadgets. Contoso Traders delivery premium quality electronics at affordable rates to resellers across the globe.  
+Gravy Traders is one stop shop for electronics items including smartphones, laptops, and other popular gadgets. Gravy Traders delivery premium quality electronics at affordable rates to resellers across the globe.  
 
 Let us make the changes and experience magic of GitHub Actions.  
 
  
 
-1. Login to your fork of Contoso Traders repository and navigate to Contoso Traders repository `https://github.com/**YOURGITHUBUSERNAME**/ContosoTraders`. 
+1. Login to your fork of Gravy Traders repository and navigate to Gravy Traders repository `https://github.com/**YOURGITHUBUSERNAME**/GravyTraders`. 
 
 2. Create a new branch **footer-update**.
 
     ![image](media/L300-2.png)
     
-3. Navigate to footer.js file, located in  **.src/ContosoTraders.Ui.Website/src/shared/footer/footer.js**
+3. Navigate to footer.js file, located in  **.src/GravyTraders.Ui.Website/src/shared/footer/footer.js**
 
    
 4. If you notice, the footer text is defined in **line#18 (1)**. Let us make an edit on this, click on edit **symbol (2)**.
@@ -112,7 +112,7 @@ Let us make the changes and experience magic of GitHub Actions.
 
 5. Replace the text with new text received from Marketing team. Line 18 should look like below.  
 
-    <p  className='mt-2'>Contoso Traders is one stop shop for electronics items including smartphones, laptops, and other popular gadgets. Contoso Traders delivery premium quality electronics at affordable rates to resellers across the globe.</p> 
+    <p  className='mt-2'>Gravy Traders is one stop shop for electronics items including smartphones, laptops, and other popular gadgets. Gravy Traders delivery premium quality electronics at affordable rates to resellers across the globe.</p> 
     
 6. Commit the change to footer-update branch. Click on Commit changes after updating commit message.  
 
@@ -122,7 +122,7 @@ Let us make the changes and experience magic of GitHub Actions.
 
     ![image](media/L300-5.png)
 
-8. Change the base from microsoft/contosotraders to **YOURUSERNAME/contosotraders** and click **Create Pull Request**.  
+8. Change the base from microsoft/Gravytraders to **YOURUSERNAME/Gravytraders** and click **Create Pull Request**.  
 
     ![image](media/L300-6.png)
 
@@ -134,7 +134,7 @@ Let us make the changes and experience magic of GitHub Actions.
 
     ![image](media/L300-8.png)
     
-11. Once the workflow successfully completes, you can navigate to your Contoso Traders Instance and see that the footer is updated on website.
+11. Once the workflow successfully completes, you can navigate to your Gravy Traders Instance and see that the footer is updated on website.
 
 ## Walkthrough – GitHub Advanced Security  
 
@@ -150,15 +150,15 @@ GitHub Advanced Security is a set of features and tools that help users secure t
 
 These features can help users secure their repositories and protect their code from a variety of potential threats. 
 
-Let us look at some of the GitHub Advanced Security features in action on your Contoso Traders Public Repo.  
+Let us look at some of the GitHub Advanced Security features in action on your Gravy Traders Public Repo.  
 
-## Enable Dependabot in Contoso Traders 
+## Enable Dependabot in Gravy Traders 
 
 Dependabot security updates make it easier for you to fix vulnerable dependencies in your repository. If you enable this feature, when a Dependabot alert is raised for a vulnerable dependency in the dependency graph of your repository, Dependabot automatically tries to fix it. 
 
-Let us take a look at how dependabot can be used in Contoso Traders.   
+Let us take a look at how dependabot can be used in Gravy Traders.   
 
-1. Login to your fork of Contoso Traders repository and navigate to Contoso Traders repository `https://github.com/**YOURGITHUBUSERNAME**/ContosoTraders`. 
+1. Login to your fork of Gravy Traders repository and navigate to Gravy Traders repository `https://github.com/**YOURGITHUBUSERNAME**/GravyTraders`. 
 
 2. Navigate to settings > Security > Code Analysis and Security.
 
@@ -195,13 +195,13 @@ Let us take a look at how dependabot can be used in Contoso Traders.
 You’ve now completed setup of GitHub Dependabot.  
 
  
-## Review Secret Scanning in Contoso Traders 
+## Review Secret Scanning in Gravy Traders 
 
 GitHub scans repositories for known secret formats to prevent fraudulent use of credentials that were committed accidentally. Secret scanning happens by default on public repositories, and can be enabled on private repositories by repository administrators or organization owners. 
 
 Let us setup Secret Scanning in your repository.  
 
-1. Login to your fork of Contoso Traders repository and navigate to Contoso Traders repository `https://github.com/**YOURGITHUBUSERNAME**/ContosoTraders`. 
+1. Login to your fork of Gravy Traders repository and navigate to Gravy Traders repository `https://github.com/**YOURGITHUBUSERNAME**/GravyTraders`. 
 
 2. Navigate to settings > Security > Code Analysis and Security.
 
@@ -246,7 +246,7 @@ Let us setup Microsoft Defender for Cloud with your GitHub repository.
 
     - Name: 
     - Select your subscription 
-    - Create a new RG or select your existing contoso-traders-rg 
+    - Create a new RG or select your existing Gravy-traders-rg 
 
     ![image](media/L300-18.png)
     
@@ -262,7 +262,7 @@ Let us setup Microsoft Defender for Cloud with your GitHub repository.
 
     ![image](media/L300-21.png)
     
-9. Once authorized, you will have option to install the app. Click Install and select your ContosoTraders repository to install the app. Click Install.
+9. Once authorized, you will have option to install the app. Click Install and select your GravyTraders repository to install the app. Click Install.
 
    ![image](media/L300-22.png)
    
@@ -285,7 +285,7 @@ Let us take a look at some the recommendations generated.
 
    ![](media/ct17.png)
    
-2. Click on Recommendations, it should list out security recommendations based on Contoso Traders deployment in your environment.
+2. Click on Recommendations, it should list out security recommendations based on Gravy Traders deployment in your environment.
  
    ![image](media/L300-24.png)
    

@@ -6,7 +6,7 @@ In this demo, we'll do a deep dive on the autoscaling capabilities of various Az
 
 You'll also get an insight into how to use Azure Monitor to monitor the application's performance and health.
 
-All these are especially crucial for an e-commerce application like Contoso Traders, which is expected to instantly handle a large, sudden spike in number of users, with low latency and no downtime.
+All these are especially crucial for an e-commerce application like Gravy Traders, which is expected to instantly handle a large, sudden spike in number of users, with low latency and no downtime.
 
 ## Before You Begin
 
@@ -16,7 +16,7 @@ All these are especially crucial for an e-commerce application like Contoso Trad
 
 ## Walkthrough: Without Autoscaling
 
-1. In the Azure portal, you can navigate to the Azure Container App in the `contoso-traders-rg` resource group.
+1. In the Azure portal, you can navigate to the Azure Container App in the `Gravy-traders-rg` resource group.
 
    ![ACA](./media/aca.png)
 
@@ -26,7 +26,7 @@ All these are especially crucial for an e-commerce application like Contoso Trad
 
    ![ACA](./media/aca-revision2.png)
 
-3. Next modify the github workflow file `.github\workflows\contoso-traders-load-testing.yml` to increase the `threads_per_engine` to (say) 30. Now commit the change to the `main` branch.
+3. Next modify the github workflow file `.github\workflows\Gravy-traders-load-testing.yml` to increase the `threads_per_engine` to (say) 30. Now commit the change to the `main` branch.
 
    ![ACA](./media/github-action-edit1.png)
 

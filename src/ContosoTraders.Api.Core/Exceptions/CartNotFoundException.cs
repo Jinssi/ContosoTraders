@@ -1,6 +1,6 @@
-﻿namespace ContosoTraders.Api.Core.Exceptions;
+﻿namespace GravyTraders.Api.Core.Exceptions;
 
-public class CartNotFoundException : ContosoTradersBaseException
+public class CartNotFoundException : GravyTradersBaseException
 {
     public CartNotFoundException(string email)
         : base($"Shopping Cart for '{email}' could not be found.")

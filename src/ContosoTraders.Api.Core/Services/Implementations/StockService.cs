@@ -1,6 +1,6 @@
-﻿namespace ContosoTraders.Api.Core.Services.Implementations;
+﻿namespace GravyTraders.Api.Core.Services.Implementations;
 
-internal class StockService : ContosoTradersServiceBase, IStockService
+internal class StockService : GravyTradersServiceBase, IStockService
 {
     private readonly IStockRepository _stockRepository;
 

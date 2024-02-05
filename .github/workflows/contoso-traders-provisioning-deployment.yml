@@ -6,11 +6,11 @@ on:
     branches: ["main"]
     paths:
       [
-        "src/ContosoTraders.Api.Carts/**",
-        "src/ContosoTraders.Api.Core/**",
-        "src/ContosoTraders.Api.Images/**",
-        "src/ContosoTraders.Api.Products/**",
-        "src/ContosoTraders.Ui.Website/**",
+        "src/GravyTraders.Api.Carts/**",
+        "src/GravyTraders.Api.Core/**",
+        "src/GravyTraders.Api.Images/**",
+        "src/GravyTraders.Api.Products/**",
+        "src/GravyTraders.Ui.Website/**",
       ]
 
 env:
@@ -95,15 +95,15 @@ jobs:
         uses: azure/sql-action@v2
         with:
           connection-string: Server=tcp:${{ env.PRODUCTS_DB_SERVER_NAME }}${{ secrets.ENVIRONMENT }}.database.windows.net,1433;Initial Catalog=${{ env.PRODUCTS_DB_NAME }};Persist Security Info=False;User ID=${{ env.PRODUCTS_DB_USER_NAME }};Password=${{ secrets.SQL_PASSWORD }};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
-          path: ./src/ContosoTraders.Api.Products/Migration/productsdb.sql
+          path: ./src/GravyTraders.Api.Products/Migration/productsdb.sql
       - name: seed product image (product details)
         uses: azure/CLI@v1
         with:
-          inlineScript: az storage blob sync --account-name '${{ env.PRODUCT_IMAGES_STORAGE_ACCOUNT_NAME }}${{ secrets.ENVIRONMENT }}' -c '${{ env.PRODUCT_DETAILS_CONTAINER_NAME }}' -s 'src/ContosoTraders.Api.Images/product-details'
+          inlineScript: az storage blob sync --account-name '${{ env.PRODUCT_IMAGES_STORAGE_ACCOUNT_NAME }}${{ secrets.ENVIRONMENT }}' -c '${{ env.PRODUCT_DETAILS_CONTAINER_NAME }}' -s 'src/GravyTraders.Api.Images/product-details'
       - name: seed product image (product list)
         uses: azure/CLI@v1
         with:
-          inlineScript: az storage blob sync --account-name '${{ env.PRODUCT_IMAGES_STORAGE_ACCOUNT_NAME }}${{ secrets.ENVIRONMENT }}' -c '${{ env.PRODUCT_LIST_CONTAINER_NAME }}' -s 'src/ContosoTraders.Api.Images/product-list'
+          inlineScript: az storage blob sync --account-name '${{ env.PRODUCT_IMAGES_STORAGE_ACCOUNT_NAME }}${{ secrets.ENVIRONMENT }}' -c '${{ env.PRODUCT_LIST_CONTAINER_NAME }}' -s 'src/GravyTraders.Api.Images/product-list'
       - name: purge CDN endpoint
         uses: azure/CLI@v1
         with:
@@ -131,7 +131,7 @@ jobs:
           username: ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}
           password: ${{ steps.extract-acr-password.outputs.acrPassword }}
       - name: docker build
-        run: docker build src -f ./src/ContosoTraders.Api.Carts/Dockerfile -t ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.CARTS_ACR_REPOSITORY_NAME }}:latest -t ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.CARTS_ACR_REPOSITORY_NAME }}:${{ github.sha }}
+        run: docker build src -f ./src/GravyTraders.Api.Carts/Dockerfile -t ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.CARTS_ACR_REPOSITORY_NAME }}:latest -t ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.CARTS_ACR_REPOSITORY_NAME }}:${{ github.sha }}
       - name: docker push (to acr)
         run: docker push --all-tags ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.CARTS_ACR_REPOSITORY_NAME }}
       - name: deploy to aca
@@ -166,7 +166,7 @@ jobs:
           username: ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}
           password: ${{ steps.extract-acr-password.outputs.acrPassword }}
       - name: docker build
-        run: docker build src -f ./src/ContosoTraders.Api.Products/Dockerfile -t ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.PRODUCTS_ACR_REPOSITORY_NAME }}:latest -t ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.PRODUCTS_ACR_REPOSITORY_NAME }}:${{ github.sha }}
+        run: docker build src -f ./src/GravyTraders.Api.Products/Dockerfile -t ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.PRODUCTS_ACR_REPOSITORY_NAME }}:latest -t ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.PRODUCTS_ACR_REPOSITORY_NAME }}:${{ github.sha }}
       - name: docker push (to acr)
         run: docker push --all-tags ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.PRODUCTS_ACR_REPOSITORY_NAME }}
       - name: set aks context
@@ -205,24 +205,24 @@ jobs:
         with:
           tokenPrefix: "{"
           tokenSuffix: "}"
-          files: ./src/ContosoTraders.Api.Products/Manifests/Deployment.yaml
+          files: ./src/GravyTraders.Api.Products/Manifests/Deployment.yaml
         env:
           ENVIRONMENT: ${{ secrets.ENVIRONMENT }}
       - name: lint deployment manifest
         uses: azure/k8s-lint@v1
         with:
-          manifests: ./src/ContosoTraders.Api.Products/Manifests/Deployment.yaml
+          manifests: ./src/GravyTraders.Api.Products/Manifests/Deployment.yaml
       - name: apply deployment manifest
         uses: Azure/k8s-deploy@v4
         with:
-          manifests: ./src/ContosoTraders.Api.Products/Manifests/Deployment.yaml
+          manifests: ./src/GravyTraders.Api.Products/Manifests/Deployment.yaml
           images: ${{ env.ACR_NAME }}${{ secrets.ENVIRONMENT }}.azurecr.io/${{ env.PRODUCTS_ACR_REPOSITORY_NAME }}:${{ github.sha }}
           imagepullsecrets: ${{ env.AKS_SECRET_NAME_ACR_PASSWORD }}
           force: true
       - name: apply service manifest
         uses: Azure/k8s-deploy@v4
         with:
-          manifests: ./src/ContosoTraders.Api.Products/Manifests/Service.yaml
+          manifests: ./src/GravyTraders.Api.Products/Manifests/Service.yaml
           force: true
       # create the ingress controller
       - name: create ingress controller
@@ -251,7 +251,7 @@ jobs:
       - name: apply namespace manifest
         uses: Azure/k8s-deploy@v4
         with:
-          manifests: ./src/ContosoTraders.Api.Products/Manifests/Namespace.yaml
+          manifests: ./src/GravyTraders.Api.Products/Manifests/Namespace.yaml
           force: true
       - name: install cert-manager
         run: |
@@ -260,38 +260,38 @@ jobs:
       - name: apply clusterIssuer manifest
         uses: Azure/k8s-deploy@v4
         with:
-          manifests: ./src/ContosoTraders.Api.Products/Manifests/ClusterIssuer.yaml
+          manifests: ./src/GravyTraders.Api.Products/Manifests/ClusterIssuer.yaml
           force: true
       - name: substitute tokens in certificate manifest
         uses: cschleiden/replace-tokens@v1.2
         with:
           tokenPrefix: "{"
           tokenSuffix: "}"
-          files: ./src/ContosoTraders.Api.Products/Manifests/Certificate.yaml
+          files: ./src/GravyTraders.Api.Products/Manifests/Certificate.yaml
         env:
           AKS_FQDN: ${{ steps.get-aks-fqdn.outputs.aksFqdn }}
       - name: apply certificate manifest
         uses: Azure/k8s-deploy@v4
         with:
-          manifests: ./src/ContosoTraders.Api.Products/Manifests/Certificate.yaml
+          manifests: ./src/GravyTraders.Api.Products/Manifests/Certificate.yaml
           force: true
       - name: substitute tokens in ingress manifest
         uses: cschleiden/replace-tokens@v1.2
         with:
           tokenPrefix: "{"
           tokenSuffix: "}"
-          files: ./src/ContosoTraders.Api.Products/Manifests/Ingress.yaml
+          files: ./src/GravyTraders.Api.Products/Manifests/Ingress.yaml
         env:
           AKS_FQDN: ${{ steps.get-aks-fqdn.outputs.aksFqdn }}
       - name: apply ingress manifest
         uses: Azure/k8s-deploy@v4
         with:
-          manifests: ./src/ContosoTraders.Api.Products/Manifests/Ingress.yaml
+          manifests: ./src/GravyTraders.Api.Products/Manifests/Ingress.yaml
           force: true
       - name: apply clusterRole manifest
         uses: Azure/k8s-deploy@v4
         with:
-          manifests: ./src/ContosoTraders.Api.Products/Manifests/ClusterRole.yaml
+          manifests: ./src/GravyTraders.Api.Products/Manifests/ClusterRole.yaml
           force: true
       - name: set productsApiEndpoint in kv
         uses: azure/CLI@v1
@@ -323,20 +323,20 @@ jobs:
         with:
           tokenPrefix: "{{"
           tokenSuffix: "}}"
-          files: ./src/ContosoTraders.Ui.Website/.env
+          files: ./src/GravyTraders.Ui.Website/.env
         env:
           CARTS_API_ENDPOINT: ${{ steps.get-cartsApiEndpoint.outputs.cartsApiEndpoint }}
           PRODUCTS_API_ENDPOINT: ${{ steps.get-productsApiEndpoint.outputs.productsApiEndpoint }}
       - name: npm install
         run: npm install
-        working-directory: src/ContosoTraders.Ui.Website
+        working-directory: src/GravyTraders.Ui.Website
       - name: npm run build
         run: npm run build
-        working-directory: src/ContosoTraders.Ui.Website
+        working-directory: src/GravyTraders.Ui.Website
       - name: deploy to storage
         uses: azure/CLI@v1
         with:
-          inlineScript: az storage blob sync --account-name '${{ env.UI_STORAGE_ACCOUNT_NAME }}${{ secrets.ENVIRONMENT }}' -c '$web' -s 'src/ContosoTraders.Ui.Website/build'
+          inlineScript: az storage blob sync --account-name '${{ env.UI_STORAGE_ACCOUNT_NAME }}${{ secrets.ENVIRONMENT }}' -c '$web' -s 'src/GravyTraders.Ui.Website/build'
       - name: purge CDN endpoint
         uses: azure/CLI@v1
         with:

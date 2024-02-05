@@ -1,8 +1,8 @@
 # Intelligent Apps with Azure AI Services - Technical Walkthrough
 
-## Overview of the Contoso Traders application
+## Overview of the Gravy Traders application
 
-Contoso Traders is a fictitious company that sells a wide range of products. The company has a website that allows customers to browse products and add them to their shopping cart. 
+Gravy Traders is a fictitious company that sells a wide range of products. The company has a website that allows customers to browse products and add them to their shopping cart. 
 
 ## Key Takeaways
 
@@ -10,11 +10,11 @@ Contoso Traders is a fictitious company that sells a wide range of products. The
 
 * Cognitive Services image search is a feature of Azure AI Services that allows developers to incorporate image recognition capabilities into their applications. This service uses machine learning algorithms to analyze and understand the content of images, making it possible for applications to search for and retrieve images based on their visual characteristics.
 
-* You will have understanding of how Contoso Traders is leveraging Azure Cognitive Services to faclitate image based search.
+* You will have understanding of how Gravy Traders is leveraging Azure Cognitive Services to faclitate image based search.
 
 ## Abstract and learning objectives
 
-In this lab, you will explore the [Contoso traders application](https://www.contosotraders.com/) and will go through the overview of an app with a focus on the need for AI/Visual Search, use the image search option in the application to find the device from the product catalog, learn how the **Azure AI service** is used in the application and also the high-level idea of how the Cognitive services work.
+In this lab, you will explore the [Gravy traders application](https://www.Gravytraders.com/) and will go through the overview of an app with a focus on the need for AI/Visual Search, use the image search option in the application to find the device from the product catalog, learn how the **Azure AI service** is used in the application and also the high-level idea of how the Cognitive services work.
 
 For this, we use the service called **Computer Vision**, an Azure AI service that analyzes content in images and videos.
 
@@ -34,7 +34,7 @@ You will need the following pre-requisites to get started:
 
 ## Walkthrough(Step-by-step guidance)
 
-1. Open the browser and navigate to [www.contosotraders.com](https://www.contosotraders.com/)
+1. Open the browser and navigate to [www.Gravytraders.com](https://www.Gravytraders.com/)
 
    ![website](https://user-images.githubusercontent.com/48020356/204910981-44806350-9b7d-4b88-95f4-0c3c08196430.png)
 
@@ -109,16 +109,16 @@ Vision Studio provides you with a platform to try several service features and s
 
    For more, refer this link: [Categorizing Images with  Azure Computer Vision](https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-categorizing-images)
 
-1. To see how this is implemented in code, clone the [ContosoTraders GitHub repository](https://github.com/microsoft/ContosoTraders.git) in Visual Studio IDE.
+1. To see how this is implemented in code, clone the [GravyTraders GitHub repository](https://github.com/microsoft/GravyTraders.git) in Visual Studio IDE.
 
-1. The controller used for the image upload is in ProductsController. In the solution, go to ContosoTraders.Api.Products/Controllers
+1. The controller used for the image upload is in ProductsController. In the solution, go to GravyTraders.Api.Products/Controllers
    ![image](media/products-controller.png)
 
     The api endpoint used here is `imageclassifier`
 
     ![image](media/image-classifier.png)
 
-1. To see the implementation part in the solution, go to ContosoTraders.Api.Core/Services/Implementations
+1. To see the implementation part in the solution, go to GravyTraders.Api.Core/Services/Implementations
    ![image](medi/../media/services-for-image-categorization.png)
 
 Here you can see the 3 services, which facilitates the image categorization feature using Computer Vision.
@@ -139,7 +139,7 @@ Here you can see the 3 services, which facilitates the image categorization feat
   
 * ## Summary
 
-You have got an overview of Azure AI Services, understood in detail about Computer Vision and seen it in action on Contoso Traders website.
+You have got an overview of Azure AI Services, understood in detail about Computer Vision and seen it in action on Gravy Traders website.
 
 ## Cleanup
 

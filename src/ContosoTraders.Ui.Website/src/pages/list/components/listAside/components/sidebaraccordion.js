@@ -6,8 +6,8 @@ import MuiAccordionSummary from "@material-ui/core/AccordionSummary";
 import MuiAccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import { Grid } from "@material-ui/core";
-import description_off from '../../../../../assets/images/original/Contoso_Assets/Icons/plus.png'
-import description_on from '../../../../../assets/images/original/Contoso_Assets/Icons/minus.png'
+import description_off from '../../../../../assets/images/original/Gravy_Assets/Icons/plus.png'
+import description_on from '../../../../../assets/images/original/Gravy_Assets/Icons/minus.png'
 import { useParams } from "react-router-dom";
 const Accordion = withStyles({
   root: {

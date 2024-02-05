@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ContosoTraders.Api.Core.Models.Implementations.Dto;
+namespace GravyTraders.Api.Core.Models.Implementations.Dto;
 
 public class AccessToken
 {

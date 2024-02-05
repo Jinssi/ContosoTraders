@@ -10,11 +10,11 @@ import PersonalInformation from "./PersonalInformation";
 import MyWishlist from "./MyWishlist";
 import MyOrders from "./MyOrders";
 import MyAddressBook from "./MyAddressBook";
-import logout_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/logout_icon.svg";
-import personal_information_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/personal_information_icon.svg";
-import my_wishlist_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_wishlist_icon.svg";
-import my_address_book_icons from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_address_book_icons.svg";
-import my_orders_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_orders_icon.svg";
+import logout_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/logout_icon.svg";
+import personal_information_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/personal_information_icon.svg";
+import my_wishlist_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/my_wishlist_icon.svg";
+import my_address_book_icons from "../../assets/images/original/Gravy_Assets/profile_page_assets/my_address_book_icons.svg";
+import my_orders_icon from "../../assets/images/original/Gravy_Assets/profile_page_assets/my_orders_icon.svg";
 import Breadcrump from "../../components/breadcrumb";
 
 const FormProfile = () => {

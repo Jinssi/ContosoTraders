@@ -13,7 +13,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\ContosoTraders.Api.Core\ContosoTraders.Api.Core.csproj" />
+		<ProjectReference Include="..\GravyTraders.Api.Core\GravyTraders.Api.Core.csproj" />
 	</ItemGroup>
 
 </Project>

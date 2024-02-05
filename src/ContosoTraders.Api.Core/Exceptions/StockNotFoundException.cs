@@ -1,6 +1,6 @@
-﻿namespace ContosoTraders.Api.Core.Exceptions;
+﻿namespace GravyTraders.Api.Core.Exceptions;
 
-public class StockNotFoundException : ContosoTradersBaseException
+public class StockNotFoundException : GravyTradersBaseException
 {
     public StockNotFoundException(int productId)
         : base($"Stock not found for product id '{productId}'")

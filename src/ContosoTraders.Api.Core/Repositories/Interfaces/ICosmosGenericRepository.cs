@@ -1,4 +1,4 @@
-﻿namespace ContosoTraders.Api.Core.Repositories.Interfaces;
+﻿namespace GravyTraders.Api.Core.Repositories.Interfaces;
 
 /// <remarks>
 ///     The type parameter constraint of 'class' is only required because of this open github issue:
