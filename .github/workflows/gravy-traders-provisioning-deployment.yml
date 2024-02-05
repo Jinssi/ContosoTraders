@@ -36,7 +36,7 @@ env:
   PRODUCT_IMAGES_STORAGE_ACCOUNT_NAME: gravytradersimg
   PRODUCT_LIST_CONTAINER_NAME: product-list
   PRODUCTS_CDN_ENDPOINT_NAME: gravy-traders-images
-  RESOURCE_GROUP_NAME: gravy-traders-rg
+  RESOURCE_GROUP_NAME: gravy-traders-prod-rg
   STORAGE_ACCOUNT_NAME: gravytradersimg
   UI_CDN_ENDPOINT_NAME: gravy-traders-ui2
   UI_STORAGE_ACCOUNT_NAME: gravytradersui2
@@ -52,7 +52,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.SERVICEPRINCIPAL }}
-      # The first step is to create the resource group: `gravy-traders-rg`.
+      # The first step is to create the resource group: `gravy-traders-prod-rg`.
       # The below step can also be manually executed as follows:
       # az deployment sub create --location {LOCATION} --template-file .\createResourceGroup.bicep
       # Note: You can specify any location for `{LOCATION}`. It's the region where the deployment metadata will be stored, and not
